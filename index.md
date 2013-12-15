@@ -1,5 +1,6 @@
 ---
 title: Lit Drupal Lean links and info
+css: [style]
 ---
 
 ### Welcome to project page
