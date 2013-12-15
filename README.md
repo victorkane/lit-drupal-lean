@@ -8,3 +8,5 @@ Example project for DrupalPicchu2014 workshop.
 "Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
 
 See [Lit Drupal Lean project page](http://victorkane.github.io/lit-drupal-lean/) for more details.
+
+See [Issue page](https://github.com/victorkane/lit-drupal-lean/issues?state=open) for project info.
