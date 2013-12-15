@@ -1,6 +1,5 @@
 ---
 title: Lit Drupal Lean links and info
-css: [style](/stiyle.css)
 ---
 
 ### Welcome to project page
