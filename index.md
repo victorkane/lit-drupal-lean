@@ -10,6 +10,10 @@ style: |
   }
 ---
 
+<style type="text/css">
+{{ page.style }}
+</style>
+
 ### Welcome to project page
 
 ![Process Workflow](https://raw.github.com/victorkane/lit-drupal-lean/master/doc/ProcessWorkflow.png)
