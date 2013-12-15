@@ -1,5 +1,6 @@
 ---
 title: Lit Drupal Lean links and info
+css: [style]
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles.css"/>
