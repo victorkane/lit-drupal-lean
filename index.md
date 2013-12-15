@@ -14,7 +14,7 @@ style: |
 {{ page.style }}
 </style>
 
-### Welcome to project page
+### Welcome to the project page
 
 ![Process Workflow](https://raw.github.com/victorkane/lit-drupal-lean/master/doc/ProcessWorkflow.png)
 
