@@ -1,37 +1,45 @@
+# Sensitive information #
+#########################
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+docroot/sites/*/settings*.php
 
-# Ignore paths that contain generated content.
-cache/
-files/
-sites/*/files
-sites/*/private
+# User Generated Content #
+##########################
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
 
-# Ignore default text files
-.htaccess
-robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-sites/all/README.txt
-sites/all/modules/README.txt
-sites/all/themes/README.txt
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-# Ignore everything but the "sites" folder ( for non core developer )
-web.config
-authorize.php
-cron.php
-index.php
-install.php
-update.php
-xmlrpc.php
-/includes
-/misc
-/modules
-/profiles
-/scripts
-/themes
+# Packages #
+############
+# It's better to unpack these files and commit the raw source, git has its own
+# built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
