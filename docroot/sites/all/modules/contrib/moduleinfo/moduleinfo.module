@@ -1,0 +1,313 @@
+<?php
+
+/**
+ * @file
+ * ModuleInfo module.
+ */
+
+// Config defaults.
+define('MODULEINFO_DEFAULT_DIRECTORY_SKIP', "tests\ncss\njs\njavascript\ntemplates\nplugins\nimages\ndocs\nhelp\n");
+define('MODULEINFO_DEFAULT_EXTENSIONS', "module\ninstall\ninc\nphp");
+define('MODULEINFO_DEFAULT_EXTENSIONS_FILTER', "");
+define('MODULEINFO_DEFAULT_CACHE_RESULT', "0");
+
+/**
+ * @see hook_menu().
+ */
+function moduleinfo_menu() {
+  $items['admin/reports/moduleinfo'] = array(
+    'title' => 'ModuleInfo',
+    'page callback' => '_moduleinfo_page_detail',
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK | MENU_NORMAL_ITEM,
+    'file' => 'moduleinfo.pages.inc',
+  );
+
+  $items['admin/reports/moduleinfo/%'] = array(
+    'title' => 'Moduleinfo',
+    'page callback' => '_moduleinfo_page_detail',
+    'page arguments' => array(3),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK,
+    'file' => 'moduleinfo.pages.inc',
+  );
+
+  $items['admin/reports/moduleinfo/info/%/%'] = array(
+    'title' => 'ModuleInfo',
+    'page callback' => '_moduleinfo_page_info',
+    'page arguments' => array(4, 5),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK | MENU_NORMAL_ITEM,
+    'file' => 'moduleinfo.pages.inc',
+  );
+
+  $items['admin/config/development/moduleinfo'] = array(
+    'title' => 'ModuleInfo',
+    'description' => 'Provides informations to modules of the system.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('moduleinfo_settings_form'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'moduleinfo.admin.inc',
+    'type' => MENU_CALLBACK | MENU_NORMAL_ITEM,
+    'weight' => 50,
+  );
+
+  $items['moduleinfo/scan'] = array(
+    'title' => 'ModuleInfo',
+    'page callback' => '_moduleinfo_action_scan',
+    'access arguments' => array('administer site configuration'),
+    'file' => 'moduleinfo.pages.inc',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * @see hook_ctools_plugin_type().
+ */
+function moduleinfo_ctools_plugin_type() {
+  $plugins = array();
+
+  $plugins['moduleinfo'] = array(
+    'defaults' => array(
+      'scan callbacks' => array(),
+      'render callbacks' => array(),
+      'post scan callbacks' => array(),
+      '#weight' => 0,
+    ),
+  );
+
+  return $plugins;
+}
+
+/**
+ * @see hook_ctools_plugin_api().
+ */
+function moduleinfo_ctools_plugin_api($owner, $api) {
+  if ($owner == 'moduleinfo' && $api == 'plugins') {
+    return array('version' => 2);
+  }
+}
+
+/**
+ * @see hook_ctools_plugin_directory().
+ */
+function moduleinfo_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'moduleinfo') {
+    return 'plugins/' . $plugin;
+  }
+}
+
+/**
+ * @see hook_form_alter().
+ */
+function moduleinfo_form_alter(&$form, &$form_state, $form_id) {
+  if ('system_modules' != $form_id) {
+    return;
+  }
+
+  $modules = system_rebuild_module_data();
+
+  foreach (element_children($form['modules']) as $fieldset) {
+    foreach (element_children($form['modules'][$fieldset]) as $module) {
+      if (!isset($modules[$module])) {
+        continue;
+      }
+
+      if ($modules[$module]->status != "1") {
+        continue;
+      }
+
+      if (!isset($form['modules'][$fieldset][$module]['description'])) {
+        $form['modules'][$fieldset][$module]['description']['#markup'] = '';
+      }
+
+      $form['modules'][$fieldset][$module]['description']['#markup'] .= ' ' . l(t('ModuleInfo'), 'admin/reports/moduleinfo/' . $module);
+    }
+  }
+}
+
+/**
+ * @see hook_theme().
+ */
+function moduleinfo_theme($existing, $type, $theme, $path) {
+  return array(
+    'moduleinfo_fieldset' => array(
+      'variables' => array('items' => array(), 'title' => NULL, 'description' => NULL),
+    ),
+    'moduleinfo_itemlist' => array(
+      'variables' => array('items' => array()),
+    ),
+  );
+}
+
+function theme_moduleinfo_fieldset($variables) {
+  if (!count($variables['items'])) {
+    return '';
+  }
+
+  if (is_array($variables['items'])) {
+    $rendered_data = theme('moduleinfo_itemlist', array('items' => $variables['items']));
+  }
+  else {
+    $rendered_data = $variables['items'];
+  }
+
+  return theme('fieldset', array(
+    'element' => array(
+      '#title' => $variables['title'] . (is_array($variables['items']) ? ' (' . count($variables['items']) . ')' : ''),
+      '#children' => $rendered_data,
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+      '#description' => $variables['description'],
+      '#attributes' => array(
+        'class' => array('collapsible', 'collapsed'),
+      ),
+    ),
+  ));
+}
+
+function theme_moduleinfo_itemlist($variables) {
+  $elements = array();
+  foreach ($variables['items'] as $item) {
+    $tmp = '<span class="label">' . $item['info'] . '</span>';
+    if (isset($item['desc']) && !empty($item['desc'])) {
+      $tmp .= '<br /><span class="description">' . $item['desc'] . '</span>';
+    }
+
+    $elements[] = $tmp;
+  }
+
+  return theme('item_list', array(
+    'items' => $elements,
+    'type' => 'ul',
+    'attributes' => array('class' => 'module-info'),
+  ));
+}
+
+/**
+ * Write data to the cache by module or custom.
+ *
+ * @param string $scan_key
+ *   Key of the type of cache
+ * @param array  $data
+ *   Data, which to be saved.
+ * @param string|NULL $module_name
+ *   Module name, if no module given the module_name will be set to '0'
+ * @param string $reference_key
+ */
+function _moduleinfo_cache_write($scan_key, $data = array(), $module_name = NULL, $reference_key = 'moduleinfo') {
+  $result = _moduleinfo_cache_read($scan_key, $module_name, $reference_key);
+
+  // Writing writes only just one result.
+  $primary_key = array();
+  if (count($result) == 1) {
+    $record = current($result);
+    $primary_key = array('scan_key', 'module', 'reference_key');
+  }
+  else {
+    $record = (object) array(
+      'scan_key' => $scan_key,
+      'module' => is_null($module_name) ? '0' : $module_name,
+      'data' => array(),
+      'reference_key' => $reference_key,
+    );
+  }
+
+  $data += $record->data;
+  $record->data = serialize($data);
+
+  drupal_write_record('cache_moduleinfo', $record, $primary_key);
+}
+
+/**
+ * Reads data from the cache by module or whole.
+ *
+ * @param string $scan_key
+ *   Key of the type of cache
+ * @param string $module_name
+ *   Module name, if NULL all items of that scan_key type will returned
+ *
+ * @param string $reference_key
+ *
+ * @return array
+ *   Array of data keyed by module, '0', or empty when no hit
+ */
+function _moduleinfo_cache_read($scan_key, $module_name = NULL, $reference_key = 'moduleinfo') {
+  $query = db_select('cache_moduleinfo', 'm')
+    ->fields('m')
+    ->condition('scan_key', $scan_key, '=');
+
+  if (!is_null($reference_key)) {
+    $query->condition('reference_key', $reference_key);
+  }
+
+  if (!is_null($module_name)) {
+    $query->condition('module', $module_name, '=');
+  }
+
+  $result = $query->execute()
+    ->fetchAllAssoc('module');
+
+  if (!$result) {
+    return array();
+  }
+
+  foreach ($result as $id => $module_name) {
+    $result[$id]->data = unserialize($module_name->data);
+  }
+
+  return $result;
+}
+
+/**
+ * Returns all found plugins as an array for an select form element.
+ *
+ * @param array $plugins
+ *   Plugins array returned by ctools_get_plugins().
+ *
+ * @return array
+ *   Array for Form API element select.
+ *
+ * @see ctools_get_plugins().
+ */
+function _moduleinfo_plugins_options($plugins) {
+  $options = array();
+  foreach ($plugins as $plugin_name => $plugin) {
+    if (!count($plugin['render callbacks'])) {
+      continue;
+    }
+    foreach ($plugin['render callbacks'] as $callback => $name) {
+      $options[$callback] = $name . ' <span class="description">' . $plugin['description'] . '</span>';
+    }
+  }
+
+  ksort($options);
+
+  return $options;
+}
+
+/**
+ * Limits an array to just one module.
+ *
+ * @param string $module_name
+ *   The name of the module you are interested in.
+ * @param array $items
+ *   All items keys by module names.
+ *
+ * @return array
+ *   Filtered array.
+ */
+function _moduleinfo_result_reduce($module_name, $items) {
+  if (!is_null($module_name)) {
+    if (!isset($items[$module_name])) {
+      return array();
+    }
+
+    $tmp = array($module_name => $items[$module_name]);
+    $items = $tmp;
+  }
+
+  return $items;
+}

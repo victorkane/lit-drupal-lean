@@ -1,0 +1,17 @@
+.info,
+div.fieldset-description,
+ul.module-info span.description {
+  color: #a3a3a3;
+}
+
+ul.module-info span.label {
+  color: black;
+}
+
+.fieldset-description {
+  margin-bottom: 10px;
+}
+
+.mono {
+  font-family: "Courier New", Courier, monospace;
+}

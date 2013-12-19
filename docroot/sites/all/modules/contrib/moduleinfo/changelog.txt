@@ -1,0 +1,6 @@
+Changelog
+
+1.4
+- removed the hook_module_enabled
+- removed the hook_module_disabled
+- 
