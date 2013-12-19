@@ -1,0 +1,201 @@
+; Packaging information for lit_dev_opentimebook_com
+name = "lit-dev.opentimebook.com"
+description = "Literary Workshop"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = views_content
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+; Fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = link
+; Media
+dependencies[] = file_entity
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_youtube
+; Node export
+dependencies[] = node_export
+dependencies[] = node_export_features
+; Other
+dependencies[] = advanced_help
+dependencies[] = auto_nodetitle
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = environment_indicator
+dependencies[] = libraries
+dependencies[] = menu_attributes
+dependencies[] = pathauto
+dependencies[] = realname
+dependencies[] = strongarm
+dependencies[] = token
+; Path management
+dependencies[] = globalredirect
+; Rules
+dependencies[] = rules
+dependencies[] = rules_admin
+; UUID
+dependencies[] = uuid
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[configurable_timezones] = 1
+variables[dashboard_stashed_blocks][0][module] = 'node'
+variables[dashboard_stashed_blocks][0][delta] = 'recent'
+variables[dashboard_stashed_blocks][0][region] = 'dashboard_main'
+variables[dashboard_stashed_blocks][1][module] = 'user'
+variables[dashboard_stashed_blocks][1][delta] = 'new'
+variables[dashboard_stashed_blocks][1][region] = 'dashboard_sidebar'
+variables[dashboard_stashed_blocks][2][module] = 'search'
+variables[dashboard_stashed_blocks][2][delta] = 'form'
+variables[dashboard_stashed_blocks][2][region] = 'dashboard_sidebar'
+variables[dashboard_stashed_blocks][3][module] = 'comment'
+variables[dashboard_stashed_blocks][3][delta] = 'recent'
+variables[dashboard_stashed_blocks][3][region] = 'dashboard_inactive'
+variables[dashboard_stashed_blocks][4][module] = 'user'
+variables[dashboard_stashed_blocks][4][delta] = 'online'
+variables[dashboard_stashed_blocks][4][region] = 'dashboard_inactive'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'America/Argentina/Buenos_Aires'
+variables[date_first_day] = '0'
+variables[date_format_long] = 'l, F j, Y - H:i'
+variables[date_format_medium] = 'D, Y-m-d H:i'
+variables[date_format_short] = 'Y-m-d H:i'
+variables[entityreference:base-tables][comment][0] = 'comment'
+variables[entityreference:base-tables][comment][1] = 'cid'
+variables[entityreference:base-tables][node][0] = 'node'
+variables[entityreference:base-tables][node][1] = 'nid'
+variables[entityreference:base-tables][file][0] = 'file_managed'
+variables[entityreference:base-tables][file][1] = 'fid'
+variables[entityreference:base-tables][taxonomy_term][0] = 'taxonomy_term_data'
+variables[entityreference:base-tables][taxonomy_term][1] = 'tid'
+variables[entityreference:base-tables][taxonomy_vocabulary][0] = 'taxonomy_vocabulary'
+variables[entityreference:base-tables][taxonomy_vocabulary][1] = 'vid'
+variables[entityreference:base-tables][user][0] = 'users'
+variables[entityreference:base-tables][user][1] = 'uid'
+variables[entityreference:base-tables][rules_config][0] = 'rules_config'
+variables[entityreference:base-tables][rules_config][1] = 'id'
+variables[field_bundle_settings_file__audio][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__default][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__image][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__video][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[filter_fallback_format] = 'plain_text'
+variables[module_filter_recent_modules][views_content] = 1387454119
+variables[module_filter_recent_modules][date] = 1387454119
+variables[module_filter_recent_modules][date_api] = 1387454119
+variables[module_filter_recent_modules][date_popup] = 1387454119
+variables[module_filter_recent_modules][date_views] = 1387454119
+variables[module_filter_recent_modules][advanced_help] = 1387454119
+variables[module_filter_recent_modules][views] = 1387454119
+variables[module_filter_recent_modules][views_bulk_operations] = 1387454119
+variables[module_filter_recent_modules][views_slideshow] = 1387454119
+variables[module_filter_recent_modules][views_slideshow_cycle] = 1387454119
+variables[module_filter_recent_modules][views_ui] = 1387454119
+variables[module_filter_recent_modules][color] = 1387454119
+variables[module_filter_recent_modules][coder] = 1387454119
+variables[module_filter_recent_modules][coder_review] = 1387454119
+variables[module_filter_recent_modules][devel] = 1387454119
+variables[module_filter_recent_modules][devel_generate] = 1387454119
+variables[module_filter_recent_modules][features] = 1387454119
+variables[module_filter_recent_modules][email] = 1387454119
+variables[module_filter_recent_modules][entityreference] = 1387454119
+variables[module_filter_recent_modules][link] = 1387454119
+variables[module_filter_recent_modules][file_entity] = 1387454119
+variables[module_filter_recent_modules][media] = 1387454119
+variables[module_filter_recent_modules][media_internet] = 1387454119
+variables[module_filter_recent_modules][media_youtube] = 1387454119
+variables[module_filter_recent_modules][node_export] = 1387454119
+variables[module_filter_recent_modules][node_export_features] = 1387454119
+variables[module_filter_recent_modules][auto_nodetitle] = 1387454119
+variables[module_filter_recent_modules][diff] = 1387454119
+variables[module_filter_recent_modules][entity] = 1387454119
+variables[module_filter_recent_modules][entity_token] = 1387454119
+variables[module_filter_recent_modules][environment_indicator] = 1387454119
+variables[module_filter_recent_modules][libraries] = 1387454119
+variables[module_filter_recent_modules][menu_attributes] = 1387454119
+variables[module_filter_recent_modules][pathauto] = 1387454119
+variables[module_filter_recent_modules][realname] = 1387454119
+variables[module_filter_recent_modules][strongarm] = 1387454119
+variables[module_filter_recent_modules][token] = 1387454119
+variables[module_filter_recent_modules][globalredirect] = 1387454119
+variables[module_filter_recent_modules][rules] = 1387454119
+variables[module_filter_recent_modules][rules_admin] = 1387454119
+variables[module_filter_recent_modules][uuid] = 1387454119
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[theme_default] = 'bartik'
+variables[user_default_timezone] = '0'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+
