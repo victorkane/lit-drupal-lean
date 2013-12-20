@@ -7,6 +7,8 @@ Example project for DrupalPicchu2014 workshop.
 
 "Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
 
+Just clone and you can run the "Everything in code" generated install profile Drupal Lean Process starter set.
+
 Project docs: [Lit Drupal Lean project wiki](https://github.com/victorkane/lit-drupal-lean/wiki). 
 
 Project news and history: [Issue page](https://github.com/victorkane/lit-drupal-lean/issues?state=open).
