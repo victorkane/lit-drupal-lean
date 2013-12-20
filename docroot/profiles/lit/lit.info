@@ -1,0 +1,87 @@
+; Packaging information for lit
+name = "lit"
+description = "lit"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = views_content
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+; Fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = link
+; Media
+dependencies[] = file_entity
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_youtube
+; Node export
+dependencies[] = node_export
+dependencies[] = node_export_features
+; Other
+dependencies[] = advanced_help
+dependencies[] = auto_nodetitle
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = environment_indicator
+dependencies[] = libraries
+dependencies[] = menu_attributes
+dependencies[] = pathauto
+dependencies[] = realname
+dependencies[] = strongarm
+dependencies[] = token
+; Path management
+dependencies[] = globalredirect
+; Rules
+dependencies[] = rules
+dependencies[] = rules_admin
+; UUID
+dependencies[] = uuid
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+
