@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * @file
+ * ModuleInfo installprofile.
+ */
+
+/**
+ * @see hook_schema().
+ */
+function moduleinfo_schema() {
+  $schema = array();
+
+  $schema['cache_moduleinfo'] = array(
+    'description' => 'Saves temporary informations about the modules in the installation.',
+    'fields'      => array(
+      'scan_key' => array(
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'module' => array(
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'reference_key' => array(
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'data' => array(
+        'type' => 'text',
+        'size' => 'big',
+        'not null' => TRUE,
+        'serialized' => TRUE,
+      ),
+    ),
+    'primary key' => array(
+      'scan_key',
+      'module',
+      'reference_key'
+    ),
+  );
+
+  return $schema;
+}
+
+/**
+ * Adding a reference key, so that sub modules can use that cache table too.
+ */
+function moduleinfo_update_7001() {
+  $table = drupal_get_schema_unprocessed('moduleinfo', 'cache_moduleinfo');
+
+  db_add_field('cache_moduleinfo', 'reference_key', $table['fields']['reference_key']);
+}
+
+/**
+ * Modify the primary key to reflect the table change.
+ */
+function moduleinfo_update_7002() {
+  $table = drupal_get_schema_unprocessed('moduleinfo', 'cache_moduleinfo');
+
+  db_drop_primary_key('cache_moduleinfo');
+  db_add_primary_key('cache_moduleinfo', $table['primary key']);
+}
+
+
+/**
+ * @see hook_uninstall().
+ */
+function moduleinfo_uninstall() {
+  variable_del('moduleinfo_informations');
+  variable_del('moduleinfo_cache_result_pages');
+  variable_del('moduleinfo_filescan_extensions');
+  variable_del('moduleinfo_filescan_directory_skip');
+  variable_del('moduleinfo_filescan_extensions_filter');
+}
