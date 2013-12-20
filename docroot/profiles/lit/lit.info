@@ -82,6 +82,8 @@ dependencies[] = views_bulk_operations
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 dependencies[] = views_ui
+; Workbench
+dependencies[] = workbench_moderation
 ; Features
 dependencies[] = features
 

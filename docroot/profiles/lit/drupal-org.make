@@ -91,3 +91,6 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][subdir] = "contrib"
 
+projects[workbench_moderation][version] = "1.3"
+projects[workbench_moderation][subdir] = "contrib"
+
