@@ -7,7 +7,9 @@ Example project for DrupalPicchu2014 workshop.
 
 "Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
 
-Just clone and you can run the "Everything in code" generated install profile Drupal Lean Process starter set.
+Clonar y correr desde docroot, se ejecutará automaticamente el perfil de instalación. Más info sobre el por qué del perfil de instalación en https://github.com/victorkane/lit-drupal-lean/issues/27.
+
+Just clone and run from docroot, the install profile will execute automatically. More info on why install profile at https://github.com/victorkane/lit-drupal-lean/issues/27
 
 Project docs: [Lit Drupal Lean project wiki](https://github.com/victorkane/lit-drupal-lean/wiki). 
 
