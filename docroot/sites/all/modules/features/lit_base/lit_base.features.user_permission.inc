@@ -15,6 +15,8 @@ function lit_base_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
