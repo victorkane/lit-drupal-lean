@@ -1,6 +1,9 @@
 <?php
-  !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
-  profiler_v2('lit');
+/*
+ * Commenting out these two lines according to https://github.com/victorkane/lit-drupal-lean/issues/issue/27
+*  !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
+* profiler_v2('lit');
+*/
 /**
  * Implements hook_install().
  *
