@@ -31,7 +31,6 @@ features[user_permission][] = edit any critique content
 features[user_permission][] = edit any text content
 features[user_permission][] = edit own critique content
 features[user_permission][] = edit own text content
-features[user_role][] = administrator
 features[user_role][] = workshop member
 features[variable][] = comment_anonymous_critique
 features[variable][] = comment_anonymous_text
