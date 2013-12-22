@@ -1,9 +1,6 @@
 <?php
-/*
- * Commenting out these two lines according to https://github.com/victorkane/lit-drupal-lean/issues/issue/27
- *  !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
- * profiler_v2('lit');
-*/
+  !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
+  profiler_v2('lit');
 /**
  * Implements hook_install().
  *
@@ -11,7 +8,7 @@
  */
 function lit_install() {
   // Enable some lit blocks.
-  $default_theme = 'bartik';
+  $default_theme = 'litthemezen';
   $admin_theme = 'seven';
   // disable all themes
   db_update('system')
@@ -122,7 +119,7 @@ function lit_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    ''
+    'lit_base'
   );
   features_revert($features);
   // ignore any rebuild messages

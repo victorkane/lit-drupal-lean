@@ -86,4 +86,5 @@ dependencies[] = views_ui
 dependencies[] = workbench_moderation
 ; Features
 dependencies[] = features
+dependencies[] = lit_base
 
