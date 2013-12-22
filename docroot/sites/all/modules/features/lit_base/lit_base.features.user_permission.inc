@@ -10,6 +10,16 @@
 function lit_base_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access content'.
+  $permissions['access content'] = array(
+    'name' => 'access content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create critique content'.
   $permissions['create critique content'] = array(
     'name' => 'create critique content',

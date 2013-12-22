@@ -21,6 +21,7 @@ features[field_instance][] = node-text-body
 features[field_instance][] = node-text-field_text_type
 features[node][] = critique
 features[node][] = text
+features[user_permission][] = access content
 features[user_permission][] = create critique content
 features[user_permission][] = create text content
 features[user_permission][] = delete any critique content
