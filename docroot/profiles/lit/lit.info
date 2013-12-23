@@ -1,6 +1,6 @@
 ; Packaging information for lit
 name = "lit"
-description = "lit"
+description = "Literary Workshop built on Drupal Lean Process LTS for the long haul"
 exclusive = "1"
 core = "7.x"
 ; ----------
@@ -87,4 +87,95 @@ dependencies[] = workbench_moderation
 ; Features
 dependencies[] = features
 dependencies[] = lit_base
+
+; ----------
+; Variables
+; ----------
+variables[additional_settings__active_tab_critique] = 'edit-auto-nodetitle'
+variables[additional_settings__active_tab_text] = 'edit-menu'
+variables[admin_theme] = 'seven'
+variables[ant_critique] = '0'
+variables[ant_pattern_critique] = '[node:field-text-being-critiqued:field-text-type]: [node:field-text-being-critiqued] [current-user:name] [current-date:custom:YmdHi]'
+variables[ant_text] = '0'
+variables[comment_critique] = '1'
+variables[comment_default_mode_critique] = 1
+variables[comment_default_mode_text] = 1
+variables[comment_default_per_page_critique] = '50'
+variables[comment_default_per_page_text] = '50'
+variables[comment_form_location_critique] = 1
+variables[comment_form_location_text] = 1
+variables[comment_preview_critique] = '1'
+variables[comment_preview_text] = '1'
+variables[comment_subject_field_critique] = 1
+variables[comment_subject_field_text] = 1
+variables[comment_text] = '1'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'Africa/Abidjan'
+variables[diff_enable_revisions_page_node_critique] = 1
+variables[diff_enable_revisions_page_node_text] = 1
+variables[diff_show_preview_changes_node_critique] = 1
+variables[diff_show_preview_changes_node_text] = 1
+variables[diff_view_mode_preview_node_critique] = 'full'
+variables[diff_view_mode_preview_node_text] = 'full'
+variables[entityreference:base-tables][comment][0] = 'comment'
+variables[entityreference:base-tables][comment][1] = 'cid'
+variables[entityreference:base-tables][node][0] = 'node'
+variables[entityreference:base-tables][node][1] = 'nid'
+variables[entityreference:base-tables][file][0] = 'file_managed'
+variables[entityreference:base-tables][file][1] = 'fid'
+variables[entityreference:base-tables][taxonomy_term][0] = 'taxonomy_term_data'
+variables[entityreference:base-tables][taxonomy_term][1] = 'tid'
+variables[entityreference:base-tables][taxonomy_vocabulary][0] = 'taxonomy_vocabulary'
+variables[entityreference:base-tables][taxonomy_vocabulary][1] = 'vid'
+variables[entityreference:base-tables][user][0] = 'users'
+variables[entityreference:base-tables][user][1] = 'uid'
+variables[entityreference:base-tables][rules_config][0] = 'rules_config'
+variables[entityreference:base-tables][rules_config][1] = 'id'
+variables[field_bundle_settings_file__audio][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__default][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__image][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_file__video][extra_fields][display][file][media_small] = array (
+  'weight' => 0,
+  'visible' => false,
+)
+variables[field_bundle_settings_node__critique][extra_fields][form][title][weight] = '1'
+variables[field_bundle_settings_node__critique][extra_fields][form][path][weight] = '2'
+variables[field_bundle_settings_node__text][extra_fields][form][title][weight] = '1'
+variables[field_bundle_settings_node__text][extra_fields][form][path][weight] = '2'
+variables[filter_fallback_format] = 'plain_text'
+variables[menu_options_critique][0] = 'main-menu'
+variables[menu_options_text][0] = 'main-menu'
+variables[menu_parent_critique] = 'main-menu:0'
+variables[menu_parent_text] = 'main-menu:0'
+variables[node_admin_theme] = '1'
+variables[node_options_critique][0] = 'status'
+variables[node_options_critique][1] = 'revision'
+variables[node_options_text][0] = 'status'
+variables[node_options_text][1] = 'revision'
+variables[node_preview_critique] = '1'
+variables[node_preview_text] = '1'
+variables[node_submitted_critique] = 1
+variables[node_submitted_text] = 1
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][user] = true
+variables[save_continue_critique] = 'Save and add fields'
+variables[save_continue_text] = 'Save and add fields'
+variables[theme_default] = 'litthemezen'
+variables[update_last_email_notification] = 1387725788
+variables[workbench_moderation_default_state_critique] = 'draft'
+variables[workbench_moderation_default_state_text] = 'draft'
 
