@@ -120,6 +120,20 @@ function lit_install() {
     'lit_base'
   );
   features_revert($features);
+  // create demo workshop member user
+  $new_user = array(
+  		'name' => 'bard',
+  		'pass' => 'bard', // note: do not md5 the password
+  		'mail' => 'bard@bardland.org',
+  		'status' => 1,
+  		'init' => 'bard@bardland.org',
+  		'roles' => array(
+  				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
+  				3 => 'workshop member',
+  		),
+  );
+  // The first parameter is sent blank so a new user is created.
+  user_save('', $new_user);
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
