@@ -26,6 +26,7 @@ function lit_base_user_default_permissions() {
   $permissions['create critique content'] = array(
     'name' => 'create critique content',
     'roles' => array(
+      'administrator' => 'administrator',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -35,6 +36,7 @@ function lit_base_user_default_permissions() {
   $permissions['create text content'] = array(
     'name' => 'create text content',
     'roles' => array(
+      'administrator' => 'administrator',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -43,21 +45,27 @@ function lit_base_user_default_permissions() {
   // Exported permission: 'delete any critique content'.
   $permissions['delete any critique content'] = array(
     'name' => 'delete any critique content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any text content'.
   $permissions['delete any text content'] = array(
     'name' => 'delete any text content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own critique content'.
   $permissions['delete own critique content'] = array(
     'name' => 'delete own critique content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -65,6 +73,7 @@ function lit_base_user_default_permissions() {
   $permissions['delete own text content'] = array(
     'name' => 'delete own text content',
     'roles' => array(
+      'administrator' => 'administrator',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -73,14 +82,18 @@ function lit_base_user_default_permissions() {
   // Exported permission: 'edit any critique content'.
   $permissions['edit any critique content'] = array(
     'name' => 'edit any critique content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any text content'.
   $permissions['edit any text content'] = array(
     'name' => 'edit any text content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -88,6 +101,7 @@ function lit_base_user_default_permissions() {
   $permissions['edit own critique content'] = array(
     'name' => 'edit own critique content',
     'roles' => array(
+      'administrator' => 'administrator',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -97,6 +111,7 @@ function lit_base_user_default_permissions() {
   $permissions['edit own text content'] = array(
     'name' => 'edit own text content',
     'roles' => array(
+      'administrator' => 'administrator',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
