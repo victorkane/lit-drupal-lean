@@ -1,0 +1,15 @@
+name = Lit Demo Content
+description = Demo content for Literary Workshop web app
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = lit_base
+dependencies[] = node_export_features
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[node_export_features][] = 23f49787-d141-4f47-9976-38c25b26a222
+features[node_export_features][] = ad2b8bb3-7d62-4db4-96f2-d33f141c6ece
+features_exclude[dependencies][node_export_features] = node_export_features
+project path = sites/all/modules/features
