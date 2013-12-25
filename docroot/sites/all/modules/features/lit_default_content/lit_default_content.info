@@ -1,0 +1,15 @@
+name = Lit Default Content
+description = Default content for the Literary Workshop
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = lit_base
+dependencies[] = strongarm
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][text] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 99fa4127-75b6-4713-b83f-264fb327d83d
+features[uuid_node][] = a4116aab-5e1c-4c2e-8f30-5a5f01ba4b09
+project path = sites/all/modules/features

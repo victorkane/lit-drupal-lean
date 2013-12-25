@@ -88,6 +88,9 @@ projects[rules][subdir] = "contrib"
 projects[uuid][version] = "1.0-alpha5"
 projects[uuid][subdir] = "contrib"
 
+projects[uuid_features][version] = "1.0-alpha3"
+projects[uuid_features][subdir] = "contrib"
+
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
