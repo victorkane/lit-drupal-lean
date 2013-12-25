@@ -144,7 +144,7 @@ function lit_install() {
   $features = array(
     'lit_base',
     'lit_layout',
-    'lit_default_content'
+    'lit_demo_content'
   );
   features_revert($features);
   // The first parameter is sent blank so a new user is created.

@@ -93,7 +93,7 @@ dependencies[] = fe_nodequeue
 dependencies[] = fe_profile
 dependencies[] = lit_base
 dependencies[] = lit_layout
-dependencies[] = lit_default_content
+dependencies[] = lit_demo_content
 
 ; ----------
 ; Variables
