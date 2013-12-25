@@ -117,7 +117,8 @@ function lit_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
-    'lit_base'
+    'lit_base',
+    'lit_layout'
   );
   features_revert($features);
   // create demo workshop member user

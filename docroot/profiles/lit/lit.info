@@ -92,6 +92,7 @@ dependencies[] = fe_block
 dependencies[] = fe_nodequeue
 dependencies[] = fe_profile
 dependencies[] = lit_base
+dependencies[] = lit_layout
 
 ; ----------
 ; Variables

@@ -1,0 +1,11 @@
+name = Lit Layout
+description = Layout feature for Literary Workshop web app
+core = 7.x
+package = Features
+dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = lit_base
+dependencies[] = masquerade
+features[fe_block_settings][] = masquerade-masquerade
+features[features_api][] = api:2
+project path = sites/all/modules/features
