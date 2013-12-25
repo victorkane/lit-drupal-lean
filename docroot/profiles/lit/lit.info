@@ -56,6 +56,8 @@ dependencies[] = media_youtube
 ; Node export
 dependencies[] = node_export
 dependencies[] = node_export_features
+; Nodequeue
+dependencies[] = nodequeue
 ; Other
 dependencies[] = advanced_help
 dependencies[] = auto_nodetitle
@@ -86,6 +88,9 @@ dependencies[] = views_ui
 dependencies[] = workbench_moderation
 ; Features
 dependencies[] = features
+dependencies[] = fe_block
+dependencies[] = fe_nodequeue
+dependencies[] = fe_profile
 dependencies[] = lit_base
 
 ; ----------

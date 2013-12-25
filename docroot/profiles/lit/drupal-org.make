@@ -22,6 +22,9 @@ projects[profiler_builder][subdir] = "contrib"
 projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
+projects[features_extra][version] = "1.0-beta1"
+projects[features_extra][subdir] = "contrib"
+
 projects[email][version] = "1.2"
 projects[email][subdir] = "contrib"
 
@@ -39,6 +42,9 @@ projects[media_youtube][subdir] = "contrib"
 
 projects[node_export][version] = "3.0"
 projects[node_export][subdir] = "contrib"
+
+projects[nodequeue][version] = "2.0-beta1"
+projects[nodequeue][subdir] = "contrib"
 
 projects[advanced_help][version] = "1.1"
 projects[advanced_help][subdir] = "contrib"
