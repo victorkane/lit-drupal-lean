@@ -121,13 +121,26 @@ function lit_install() {
     'lit_layout'
   );
   features_revert($features);
-  // create demo workshop member user
+  // create demo workshop member users
   $new_user = array(
   		'name' => 'bard',
   		'pass' => 'bard', // note: do not md5 the password
   		'mail' => 'bard@bardland.org',
   		'status' => 1,
   		'init' => 'bard@bardland.org',
+  		'roles' => array(
+  				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
+  				3 => 'workshop member',
+  		),
+  );
+  // The first parameter is sent blank so a new user is created.
+  user_save('', $new_user);
+  $new_user = array(
+  		'name' => 'muse',
+  		'pass' => 'muse', // note: do not md5 the password
+  		'mail' => 'muse@bardland.org',
+  		'status' => 1,
+  		'init' => 'muse@bardland.org',
   		'roles' => array(
   				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
   				3 => 'workshop member',
