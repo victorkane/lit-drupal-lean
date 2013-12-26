@@ -66,6 +66,7 @@ dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = environment_indicator
 dependencies[] = libraries
+dependencies[] = masquerade
 dependencies[] = menu_attributes
 dependencies[] = pathauto
 dependencies[] = realname
