@@ -11,25 +11,263 @@ function lit_demo_content_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
-      \'vid\' => \'3\',
+      \'vid\' => \'21\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: Mammasay mammasa mamma by muse 201312261027\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'49ccc3f0-6de6-48d8-b76d-3225f5321650\',
+      \'nid\' => \'18\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053661\',
+      \'changed\' => \'1388053661\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'19305920-c998-4ec0-9eef-1ce6fd07c660\',
+      \'revision_timestamp\' => \'1388053661\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Dope facilisi. Pimpin\' faucibizzle pharetra neque. Shut the shizzle up vulputate check it out id mauris. Crizzle accumsizzle odio shiz shut the shizzle up. I\'m in the shizzle own yo\' shiz vizzle ass. Crizzle brizzle, mi mah nizzle eleifend my shizz, gangster sem stuff shit, eu my shizz quizzle mammasay mammasa mamma oo sa egizzle mi. Etiam fo shizzle, lectus izzle aliquizzle cool, tellizzle nisl rizzle tellivizzle, a cool nulla fo shizzle izzle purizzle. Dope aliquet mattizzle pede. In owned things dolizzle. Praesent leo dawg, pot , nizzle nec, shizzle my nizzle crocodizzle izzle, sem. Shiznit dizzle massa pot its fo rizzle blandizzle hizzle. Vestibulum ullamcorpizzle gizzle at sem tincidunt lobortis. Shiz quis maurizzle. Maecenizzle lacinia. Doggy mammasay mammasa mamma oo sa pot enizzle. Pellentesque mi. Lorizzle ipsizzle ma nizzle sizzle mofo, consectetizzle we gonna chung elizzle. Ma nizzle arcu, convallis rizzle, sagittizzle that\'s the shizzle, pharetra yo, neque. Shizznit bizzle dolor sizzle yo mamma, consectetizzle adipiscing elizzle.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Dope facilisi. Pimpin&#039; faucibizzle pharetra neque. Shut the shizzle up vulputate check it out id mauris. Crizzle accumsizzle odio shiz shut the shizzle up. I&#039;m in the shizzle own yo&#039; shiz vizzle ass. Crizzle brizzle, mi mah nizzle eleifend my shizz, gangster sem stuff shit, eu my shizz quizzle mammasay mammasa mamma oo sa egizzle mi. Etiam fo shizzle, lectus izzle aliquizzle cool, tellizzle nisl rizzle tellivizzle, a cool nulla fo shizzle izzle purizzle. Dope aliquet mattizzle pede. In owned things dolizzle. Praesent leo dawg, pot , nizzle nec, shizzle my nizzle crocodizzle izzle, sem. Shiznit dizzle massa pot its fo rizzle blandizzle hizzle. Vestibulum ullamcorpizzle gizzle at sem tincidunt lobortis. Shiz quis maurizzle. Maecenizzle lacinia. Doggy mammasay mammasa mamma oo sa pot enizzle. Pellentesque mi. Lorizzle ipsizzle ma nizzle sizzle mofo, consectetizzle we gonna chung elizzle. Ma nizzle arcu, convallis rizzle, sagittizzle that&#039;s the shizzle, pharetra yo, neque. Shizznit bizzle dolor sizzle yo mamma, consectetizzle adipiscing elizzle.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Mammasay mammasa mamma\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Mammasay mammasa mamma\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053661\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'21\',
+        \'source\' => \'node/18\',
+        \'alias\' => \'content/submission-mammasay-mammasa-mamma-muse-201312261027\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'7\',
       \'uid\' => \'2\',
-      \'title\' => \' Submission: Sonnet II by bard 201312251752\',
+      \'title\' => \' Submission: Flexitarian by bard 201312261003\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'6fd5e7b8-67fe-4893-96c6-f842998f47d7\',
+      \'nid\' => \'7\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052228\',
+      \'changed\' => \'1388052228\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'19592b42-9971-4693-b110-447343d82f43\',
+      \'revision_timestamp\' => \'1388052228\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Banh mi Cosby sweater organic pop-up, Carles yr Wes Anderson ethical fixie literally. +1 Portland gluten-free cardigan. \\r\\nVHS cray flexitarian, 8-bit Blue Bottle High Life Truffaut raw denim Schlitz fanny pack American Apparel. \\r\\nPlaid raw denim tattooed dreamcatcher, pickled post-ironic chillwave banh mi forage sartorial DIY Helvetica \\r\\nyou probably haven\'t heard of them mixtape. \\r\\n\\r\\nGodard fixie seitan swag tousled. \\r\\nMlkshk salvia messenger bag, cray Wes Anderson dreamcatcher \\r\\nAustin Portland you probably haven\'t heard of them \\r\\n\\r\\nOdd Future. \\r\\nPitchfork fingerstache flexitarian messenger bag, \\r\\nbanjo craft beer Neutra iPhone.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Banh mi Cosby sweater organic pop-up, Carles yr Wes Anderson ethical fixie literally. +1 Portland gluten-free cardigan.<br />\\nVHS cray flexitarian, 8-bit Blue Bottle High Life Truffaut raw denim Schlitz fanny pack American Apparel.<br />\\nPlaid raw denim tattooed dreamcatcher, pickled post-ironic chillwave banh mi forage sartorial DIY Helvetica<br />\\nyou probably haven&#039;t heard of them mixtape. </p>\\n<p>Godard fixie seitan swag tousled.<br />\\nMlkshk salvia messenger bag, cray Wes Anderson dreamcatcher<br />\\nAustin Portland you probably haven&#039;t heard of them </p>\\n<p>Odd Future.<br />\\nPitchfork fingerstache flexitarian messenger bag,<br />\\nbanjo craft beer Neutra iPhone.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Flexitarian\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Flexitarian\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052228\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'10\',
+        \'source\' => \'node/7\',
+        \'alias\' => \'content/submission-flexitarian-bard-201312261003\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'1\',
+      \'uid\' => \'0\',
+      \'title\' => \' Submission: Sonnet II by Anonymous 201312252018\',
       \'log\' => \'\',
       \'status\' => \'1\',
       \'comment\' => \'1\',
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'1902eb8b-fbf6-4e33-8476-7e2ead06b372\',
-      \'nid\' => \'2\',
+      \'nid\' => \'1\',
       \'type\' => \'text\',
       \'language\' => \'und\',
-      \'created\' => \'1387993938\',
-      \'changed\' => \'1387993938\',
+      \'created\' => \'1388002732\',
+      \'changed\' => \'1388002732\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'23f49787-d141-4f47-9976-38c25b26a222\',
-      \'revision_timestamp\' => \'1387993938\',
-      \'revision_uid\' => \'2\',
+      \'revision_timestamp\' => \'1388002732\',
+      \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
           array(
@@ -113,7 +351,364 @@ function lit_demo_content_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1387993938\',
+      \'last_comment_timestamp\' => \'1388002732\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'0\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'1\',
+        \'source\' => \'node/1\',
+        \'alias\' => \'content/submission-sonnet-ii-anonymous-201312252018\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'23\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: Gizzle egestas by muse 201312261028\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'60215eaf-e76e-47e6-9065-e49fbc05063a\',
+      \'nid\' => \'20\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053736\',
+      \'changed\' => \'1388053736\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'2424d3ea-5eeb-4d7b-96d8-85c2c640e798\',
+      \'revision_timestamp\' => \'1388053736\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Integizzle nizzle . Phasellus semper, nulla eu vehicula shizzle my nizzle crocodizzle, velit own yo\' convallizzle rizzle, vizzle fo sapien leo black crackalackin. Vivamizzle vestibulizzle laorizzle izzle. Etizzle shizzle my nizzle crocodizzle tempor daahng dawg. Crizzle interdizzle ornare daahng dawg. Vestibulum fizzle mah nizzle, rhoncus a, go to hizzle fo shizzle, faucibus izzle, get down get down. Vivamizzle sure euismod sapien. Maecenizzle pimpin\' gravida crackalackin. Fusce shut the shizzle up tortor gangster ghetto rizzle pulvinar. Morbi mollis bizzle doggy. Gizzle egestas, yo mamma a laoreet sollicitudizzle, crackalackin velizzle shut the shizzle up brizzle, check it out elementum that\'s the shizzle purizzle phat velit. Suspendisse gizzle fo shizzle quizzle fo shizzle. Sed ac we gonna chung et dui euismod its fo rizzle. Phasellizzle izzle own yo\'. I\'m in the shizzle velizzle. Suspendisse izzle nibh.\\r\\n",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Integizzle nizzle . Phasellus semper, nulla eu vehicula shizzle my nizzle crocodizzle, velit own yo&#039; convallizzle rizzle, vizzle fo sapien leo black crackalackin. Vivamizzle vestibulizzle laorizzle izzle. Etizzle shizzle my nizzle crocodizzle tempor daahng dawg. Crizzle interdizzle ornare daahng dawg. Vestibulum fizzle mah nizzle, rhoncus a, go to hizzle fo shizzle, faucibus izzle, get down get down. Vivamizzle sure euismod sapien. Maecenizzle pimpin&#039; gravida crackalackin. Fusce shut the shizzle up tortor gangster ghetto rizzle pulvinar. Morbi mollis bizzle doggy. Gizzle egestas, yo mamma a laoreet sollicitudizzle, crackalackin velizzle shut the shizzle up brizzle, check it out elementum that&#039;s the shizzle purizzle phat velit. Suspendisse gizzle fo shizzle quizzle fo shizzle. Sed ac we gonna chung et dui euismod its fo rizzle. Phasellizzle izzle own yo&#039;. I&#039;m in the shizzle velizzle. Suspendisse izzle nibh.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Gizzle egestas\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Gizzle egestas\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053736\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'23\',
+        \'source\' => \'node/20\',
+        \'alias\' => \'content/submission-gizzle-egestas-muse-201312261028\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'18\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: Etiam by muse 201312261024\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'38d39ec5-ed88-4545-96d9-baad66805714\',
+      \'nid\' => \'15\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053494\',
+      \'changed\' => \'1388053494\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'33c84bb5-a056-4abf-a542-3fbc9c3bf976\',
+      \'revision_timestamp\' => \'1388053494\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Sizzle gizzle. shiz massa its fo rizzle maurizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle shiz ipsizzle primizzle shut the shizzle up faucibus orci luctus izzle phat fizzle cubilia Its fo rizzle; Aenean vestibulum. Fo shizzle habitant morbi tristique senectus shizznit netus et malesuada famizzle shit sizzle egestizzle. Bow wow wow tempor hendrerit dope. Aliquizzle erat yo mamma. Vivamizzle gangster enim, yo izzle, rizzle we gonna chung, crunk dawg, arcu. Nulla check it out. Donizzle fermentum, est yippiyo pharetra uhuh ... yih!, magna erat ultricies for sure, nizzle ullamcorper fo shizzle my nizzle dolizzle izzle nibh. Vivamizzle tellus neque, sure ut, ornare izzle, its fo rizzle nizzle, leo. Fizzle dawg sizzle, black sizzle amet, interdum vehicula, dignissizzle malesuada, arcu. Aenizzle pizzle ipsum izzle est ullamcorpizzle tincidunt. Donec quizzle. Maurizzle ligula urna, dizzle id, dizzle venenatizzle, sodales nizzle, felizzle. Etiam gravida.\',
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Sizzle gizzle. shiz massa its fo rizzle maurizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle shiz ipsizzle primizzle shut the shizzle up faucibus orci luctus izzle phat fizzle cubilia Its fo rizzle; Aenean vestibulum. Fo shizzle habitant morbi tristique senectus shizznit netus et malesuada famizzle shit sizzle egestizzle. Bow wow wow tempor hendrerit dope. Aliquizzle erat yo mamma. Vivamizzle gangster enim, yo izzle, rizzle we gonna chung, crunk dawg, arcu. Nulla check it out. Donizzle fermentum, est yippiyo pharetra uhuh ... yih!, magna erat ultricies for sure, nizzle ullamcorper fo shizzle my nizzle dolizzle izzle nibh. Vivamizzle tellus neque, sure ut, ornare izzle, its fo rizzle nizzle, leo. Fizzle dawg sizzle, black sizzle amet, interdum vehicula, dignissizzle malesuada, arcu. Aenizzle pizzle ipsum izzle est ullamcorpizzle tincidunt. Donec quizzle. Maurizzle ligula urna, dizzle id, dizzle venenatizzle, sodales nizzle, felizzle. Etiam gravida.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Etiam\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Etiam\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053494\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'18\',
+        \'source\' => \'node/15\',
+        \'alias\' => \'content/submission-etiam-muse-201312261024\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'6\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Disk ratchet woof by bard 201312261001\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'71133d23-d384-4992-9971-2e4bfaecf329\',
+      \'nid\' => \'6\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052104\',
+      \'changed\' => \'1388052104\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'42fdf3ae-8a67-4729-a0aa-430c0a7065f4\',
+      \'revision_timestamp\' => \'1388052104\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Inner ladle wile, Ladle Rat Rotten Hut a raft attar cordage, an ranker dough belle. \\"Comb ink, sweat hard,\\" setter wicket woof, disgracing is verse. Ladle Rat Rotten Hut entity bet rum an stud buyer groin-murder\'s bet.\\r\\n\\r\\n\\"O Grammar!\\" crater ladle gull, \\"Wood bag icer gut! A nervous sausage bag ice!\\"\\r\\n\\r\\n\\"Battered lucky chew whiff, doling,\\" whiskered disk ratchet woof, wetter wicket small.\\r\\n\\r\\n\\"O Grammar, water bag noise! A nervous sore suture anomolous prognosis!\\"\\r\\n\\r\\n\\"Battered small your whiff,\\" insert a woof, ants mouse worse waddling.\\r\\n\\r\\n\\"O Grammar, water bag mousy gut! A nervous sore suture bag mouse!\\"\\r\\n\\r\\nDaze worry on-forger-nut gulls lest warts. Oil offer sodden, thoroughing offer carvers an sprinkling otter bet, disk curl and bloat-thursday woof ceased pore Ladle Rat Rotten Hut an garbled erupt.\\r\\n\\r\\nMural: Yonder nor sorghum stenches shut ladle gulls stopper torque wet strainers. \\r\\n",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Inner ladle wile, Ladle Rat Rotten Hut a raft attar cordage, an ranker dough belle. &quot;Comb ink, sweat hard,&quot; setter wicket woof, disgracing is verse. Ladle Rat Rotten Hut entity bet rum an stud buyer groin-murder&#039;s bet.</p>\\n<p>&quot;O Grammar!&quot; crater ladle gull, &quot;Wood bag icer gut! A nervous sausage bag ice!&quot;</p>\\n<p>&quot;Battered lucky chew whiff, doling,&quot; whiskered disk ratchet woof, wetter wicket small.</p>\\n<p>&quot;O Grammar, water bag noise! A nervous sore suture anomolous prognosis!&quot;</p>\\n<p>&quot;Battered small your whiff,&quot; insert a woof, ants mouse worse waddling.</p>\\n<p>&quot;O Grammar, water bag mousy gut! A nervous sore suture bag mouse!&quot;</p>\\n<p>Daze worry on-forger-nut gulls lest warts. Oil offer sodden, thoroughing offer carvers an sprinkling otter bet, disk curl and bloat-thursday woof ceased pore Ladle Rat Rotten Hut an garbled erupt.</p>\\n<p>Mural: Yonder nor sorghum stenches shut ladle gulls stopper torque wet strainers.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Disk ratchet woof\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Disk ratchet woof\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052104\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'2\',
       \'comment_count\' => \'0\',
@@ -121,9 +716,723 @@ function lit_demo_content_node_export_features_default() {
       \'picture\' => \'0\',
       \'data\' => NULL,
       \'path\' => array(
-        \'pid\' => \'4\',
-        \'source\' => \'node/2\',
-        \'alias\' => \'content/submission-sonnet-ii-bard-201312251752\',
+        \'pid\' => \'9\',
+        \'source\' => \'node/6\',
+        \'alias\' => \'content/submission-disk-ratchet-woof-bard-201312261001\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'10\',
+      \'uid\' => \'2\',
+      \'title\' => \' Theoretical: Tarantino by bard 201312261009\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'84c0f025-80d0-4424-a86c-0b44df491ed3\',
+      \'nid\' => \'10\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052549\',
+      \'changed\' => \'1388052549\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'46dfe3f0-5430-4ca5-94c9-a2f0d00d7393\',
+      \'revision_timestamp\' => \'1388052549\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "If one examines capitalist construction in the work of Tarantino, one is faced with a choice: either reject neodialectic theory or conclude that sexual identity has significance. However, the subject is interpolated into a posttextual nihilism that includes truth as a paradox. The primary theme of Long’s[1] model of Marxist capitalism is the role of the observer as artist.\\r\\n\\r\\nBut Lacan promotes the use of posttextual nihilism to deconstruct capitalism. Marxist capitalism implies that the collective is capable of significance.\\r\\n\\r\\nTherefore, Marx uses the term ‘the capitalist paradigm of discourse’ to denote not desublimation per se, but postdesublimation. Sontag suggests the use of capitalist construction to analyse class.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>If one examines capitalist construction in the work of Tarantino, one is faced with a choice: either reject neodialectic theory or conclude that sexual identity has significance. However, the subject is interpolated into a posttextual nihilism that includes truth as a paradox. The primary theme of Long’s[1] model of Marxist capitalism is the role of the observer as artist.</p>\\n<p>But Lacan promotes the use of posttextual nihilism to deconstruct capitalism. Marxist capitalism implies that the collective is capable of significance.</p>\\n<p>Therefore, Marx uses the term ‘the capitalist paradigm of discourse’ to denote not desublimation per se, but postdesublimation. Sontag suggests the use of capitalist construction to analyse class.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Tarantino\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Tarantino\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'THEORY \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052549\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'13\',
+        \'source\' => \'node/10\',
+        \'alias\' => \'content/theoretical-tarantino-bard-201312261009\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'22\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: Sure check it out by muse 201312261028\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'7fd3f735-64cf-4fe5-8c75-b395128f3778\',
+      \'nid\' => \'19\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053696\',
+      \'changed\' => \'1388053696\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'571f1bca-1a2e-4491-93f1-9acd6049bfc7\',
+      \'revision_timestamp\' => \'1388053696\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Shiznit gravida ligula yo est. Proin pot. My shizz tempor. Donizzle in mi a erizzle imperdizzle for sure. Duis vizzle black. Sed mammasay mammasa mamma oo sa est izzle crunk. Go to hizzle a ipsum vitae fo shizzle my nizzle euismizzle da bomb. Integizzle nec risizzle. Check it out lobortis the bizzle vizzle fo shizzle. Morbi eget justo. Etiam eu dui in da bomb gangsta phat. Morbi placerat, arcu non euismizzle porta, mah nizzle crazy adipiscing nunc, cursus dope mi bow wow wow sizzle fizzle est. Away turpizzle. Sure check it out ipsizzle primis cool faucibizzle orci shut the shizzle up et ultricizzle bow wow wow cubilia Check it out; You son of a bizzle vehicula, dawg fo shizzle my nizzle tincidunt you son of a bizzle, black lorem gravida nunc, a my shizz yippiyo metus quizzle owned. Fo shizzle pretium erizzle izzle nulla. Phat accumsizzle. Cizzle sociis natoque penatibizzle dang magnizzle check out this for sure montes, mammasay mammasa mamma oo sa ridiculus mus. Prizzle izzle ma nizzle fringilla quam ultrices congue. Donizzle non mi.\\r\\n",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Shiznit gravida ligula yo est. Proin pot. My shizz tempor. Donizzle in mi a erizzle imperdizzle for sure. Duis vizzle black. Sed mammasay mammasa mamma oo sa est izzle crunk. Go to hizzle a ipsum vitae fo shizzle my nizzle euismizzle da bomb. Integizzle nec risizzle. Check it out lobortis the bizzle vizzle fo shizzle. Morbi eget justo. Etiam eu dui in da bomb gangsta phat. Morbi placerat, arcu non euismizzle porta, mah nizzle crazy adipiscing nunc, cursus dope mi bow wow wow sizzle fizzle est. Away turpizzle. Sure check it out ipsizzle primis cool faucibizzle orci shut the shizzle up et ultricizzle bow wow wow cubilia Check it out; You son of a bizzle vehicula, dawg fo shizzle my nizzle tincidunt you son of a bizzle, black lorem gravida nunc, a my shizz yippiyo metus quizzle owned. Fo shizzle pretium erizzle izzle nulla. Phat accumsizzle. Cizzle sociis natoque penatibizzle dang magnizzle check out this for sure montes, mammasay mammasa mamma oo sa ridiculus mus. Prizzle izzle ma nizzle fringilla quam ultrices congue. Donizzle non mi.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Sure check it out\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Sure check it out\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053696\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'22\',
+        \'source\' => \'node/19\',
+        \'alias\' => \'content/submission-sure-check-it-out-muse-201312261028\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'16\',
+      \'uid\' => \'2\',
+      \'title\' => \' Theoretical: Realities of absurdity by adminpww99 201312261015\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'095d8bf2-aafd-493e-a7e7-42bc5f800e02\',
+      \'nid\' => \'13\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052787\',
+      \'changed\' => \'1388052919\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'70ccfd61-5dbd-49b0-9c1c-bbca4c95d294\',
+      \'revision_timestamp\' => \'1388052919\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "The primary theme of von Junz’s[5] essay on Marxist capitalism is the bridge between truth and sexual identity. It could be said that Debord suggests the use of Lacanist obscurity to modify class. Drucker[6] holds that we have to choose between dialectic patriarchialism and Sontagist camp.\\r\\n\\r\\n“Sexual identity is part of the economy of language,” says Marx. Thus, Lacanist obscurity implies that the collective is fundamentally dead. An abundance of discourses concerning the failure, and hence the absurdity, of neocultural consciousness may be found.\\r\\n\\r\\nTherefore, the subject is interpolated into a capitalist discourse that includes sexuality as a reality. Lyotard’s model of Marxist capitalism holds that reality is capable of significant form, but only if the premise of the materialist paradigm of consensus is invalid.\\r\\n\\r\\nIt could be said that Foucault uses the term ‘Lacanist obscurity’ to denote a self-referential whole. The main theme of the works of Rushdie is the role of the participant as observer.\\r\\n\\r\\nBut Bataille uses the term ‘subcapitalist textual theory’ to denote a precultural reality. Foucault promotes the use of Lacanist obscurity to challenge hierarchy.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>The primary theme of von Junz’s[5] essay on Marxist capitalism is the bridge between truth and sexual identity. It could be said that Debord suggests the use of Lacanist obscurity to modify class. Drucker[6] holds that we have to choose between dialectic patriarchialism and Sontagist camp.</p>\\n<p>“Sexual identity is part of the economy of language,” says Marx. Thus, Lacanist obscurity implies that the collective is fundamentally dead. An abundance of discourses concerning the failure, and hence the absurdity, of neocultural consciousness may be found.</p>\\n<p>Therefore, the subject is interpolated into a capitalist discourse that includes sexuality as a reality. Lyotard’s model of Marxist capitalism holds that reality is capable of significant form, but only if the premise of the materialist paradigm of consensus is invalid.</p>\\n<p>It could be said that Foucault uses the term ‘Lacanist obscurity’ to denote a self-referential whole. The main theme of the works of Rushdie is the role of the participant as observer.</p>\\n<p>But Bataille uses the term ‘subcapitalist textual theory’ to denote a precultural reality. Foucault promotes the use of Lacanist obscurity to challenge hierarchy.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Realities of absurdity\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Realities of absurdity\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'THEORY \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052787\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'16\',
+        \'source\' => \'node/13\',
+        \'alias\' => \'content/theoretical-realities-absurdity-adminpww99-201312261015\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'19\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: nizzle pizzle bow wow by muse 201312261025\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'cd3a654d-61ca-419c-a804-ff87a9765566\',
+      \'nid\' => \'16\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053558\',
+      \'changed\' => \'1388053558\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'8dab581b-5f75-462d-bd00-c0c0154222d2\',
+      \'revision_timestamp\' => \'1388053558\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Maecenizzle mi. Nizzle eros. Proin gizzle, for sure nizzle congue consectetizzle, metizzle libero consequat purizzle, daahng dawg ullamcorpizzle dui mi nizzle quizzle. The bizzle faucibizzle tellivizzle. Dizzle hizzle fo, hizzle sizzle, cool volutpizzle, gangster izzle, stuff. Proin shut the shizzle up urna. Mah nizzle pizzle rizzle bow wow wow funky fresh. Pellentesque nizzle euismod owned. Donec ultrices things break yo neck, yall erizzle. Bizzle posuere check out this break yo neck, yall. Ut mauris. Cool sheezy shut the shizzle up, uhuh ... yih! things, eleifend fo, malesuada fizzle, nisi. Fizzle vulputate dizzle crazy.\',
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Maecenizzle mi. Nizzle eros. Proin gizzle, for sure nizzle congue consectetizzle, metizzle libero consequat purizzle, daahng dawg ullamcorpizzle dui mi nizzle quizzle. The bizzle faucibizzle tellivizzle. Dizzle hizzle fo, hizzle sizzle, cool volutpizzle, gangster izzle, stuff. Proin shut the shizzle up urna. Mah nizzle pizzle rizzle bow wow wow funky fresh. Pellentesque nizzle euismod owned. Donec ultrices things break yo neck, yall erizzle. Bizzle posuere check out this break yo neck, yall. Ut mauris. Cool sheezy shut the shizzle up, uhuh ... yih! things, eleifend fo, malesuada fizzle, nisi. Fizzle vulputate dizzle crazy.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'nizzle pizzle bow wow\',
+            \'format\' => NULL,
+            \'safe_value\' => \'nizzle pizzle bow wow\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053558\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'19\',
+        \'source\' => \'node/16\',
+        \'alias\' => \'content/submission-nizzle-pizzle-bow-wow-muse-201312261025\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'17\',
+      \'uid\' => \'2\',
+      \'title\' => \' Theoretical: Expressions of absurdity by adminpww99 201312261015\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'1ca7c5ee-a922-476b-b8cb-1b4a896c19d9\',
+      \'nid\' => \'11\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052617\',
+      \'changed\' => \'1388052938\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'9f7105f3-8fee-4a08-927b-5bc53ba90a7c\',
+      \'revision_timestamp\' => \'1388052938\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "“Culture is used in the service of sexism,” says Derrida; however, according to Brophy[2] , it is not so much culture that is used in the service of sexism, but rather the paradigm, and subsequent fatal flaw, of culture. However, Bataille’s essay on Marxist capitalism holds that class, somewhat paradoxically, has intrinsic meaning. Hanfkopf[3] states that we have to choose between posttextual nihilism and Baudrillardist simulation.\\r\\n\\r\\nIf one examines deconstructivist objectivism, one is faced with a choice: either accept Marxist capitalism or conclude that the goal of the writer is social comment, but only if the subcultural paradigm of reality is valid. Thus, Marx promotes the use of capitalist construction to challenge hierarchy. The main theme of the works of Rushdie is the common ground between narrativity and sexual identity.\\r\\n\\r\\n“Class is part of the economy of language,” says Bataille; however, according to Buxton[4] , it is not so much class that is part of the economy of language, but rather the futility, and some would say the stasis, of class. In a sense, Lacan’s critique of neodialectic capitalist theory suggests that art may be used to reinforce colonialist perceptions of sexual identity. An abundance of desituationisms concerning capitalist construction exist.\\r\\n\\r\\nThus, if Marxist capitalism holds, we have to choose between capitalist construction and Batailleist `powerful communication’. Several discourses concerning not, in fact, deappropriation, but predeappropriation may be discovered.\\r\\n\\r\\nBut the primary theme of Finnis’s[5] essay on posttextual nihilism is the bridge between narrativity and society. Lyotard suggests the use of Marxist capitalism to modify and analyse sexual identity.\\r\\n\\r\\nThus, Humphrey[6] holds that we have to choose between posttextual nihilism and postdialectic discourse. The main theme of the works of Stone is not narrative, as Marxist capitalism suggests, but neonarrative.\\r\\n\\r\\nHowever, Bataille promotes the use of capitalist construction to deconstruct sexism. The subject is contextualised into a Marxist capitalism that includes reality as a reality.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>“Culture is used in the service of sexism,” says Derrida; however, according to Brophy[2] , it is not so much culture that is used in the service of sexism, but rather the paradigm, and subsequent fatal flaw, of culture. However, Bataille’s essay on Marxist capitalism holds that class, somewhat paradoxically, has intrinsic meaning. Hanfkopf[3] states that we have to choose between posttextual nihilism and Baudrillardist simulation.</p>\\n<p>If one examines deconstructivist objectivism, one is faced with a choice: either accept Marxist capitalism or conclude that the goal of the writer is social comment, but only if the subcultural paradigm of reality is valid. Thus, Marx promotes the use of capitalist construction to challenge hierarchy. The main theme of the works of Rushdie is the common ground between narrativity and sexual identity.</p>\\n<p>“Class is part of the economy of language,” says Bataille; however, according to Buxton[4] , it is not so much class that is part of the economy of language, but rather the futility, and some would say the stasis, of class. In a sense, Lacan’s critique of neodialectic capitalist theory suggests that art may be used to reinforce colonialist perceptions of sexual identity. An abundance of desituationisms concerning capitalist construction exist.</p>\\n<p>Thus, if Marxist capitalism holds, we have to choose between capitalist construction and Batailleist `powerful communication’. Several discourses concerning not, in fact, deappropriation, but predeappropriation may be discovered.</p>\\n<p>But the primary theme of Finnis’s[5] essay on posttextual nihilism is the bridge between narrativity and society. Lyotard suggests the use of Marxist capitalism to modify and analyse sexual identity.</p>\\n<p>Thus, Humphrey[6] holds that we have to choose between posttextual nihilism and postdialectic discourse. The main theme of the works of Stone is not narrative, as Marxist capitalism suggests, but neonarrative.</p>\\n<p>However, Bataille promotes the use of capitalist construction to deconstruct sexism. The subject is contextualised into a Marxist capitalism that includes reality as a reality.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Expressions of absurdity\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Expressions of absurdity\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'THEORY \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052617\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'14\',
+        \'source\' => \'node/11\',
+        \'alias\' => \'content/theoretical-expressions-absurdity-adminpww99-201312261015\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'9\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Tumblr XOXO tote bag by bard 201312261007\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'4c9e0a04-41a8-4bed-b62a-6979f5be045b\',
+      \'nid\' => \'9\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052448\',
+      \'changed\' => \'1388052448\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'a9e93034-81da-4727-bc18-aa00ecc508ac\',
+      \'revision_timestamp\' => \'1388052448\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "IPhone umami Wes Anderson biodiesel, drinking vinegar next level irony. \\r\\nTousled iPhone actually single-origin coffee chia. \\r\\nLeggings synth fanny pack \\r\\nhashtag cornhole. \\r\\n\\r\\nVHS tote bag gluten-free direct trade, \\r\\nphoto booth pork belly \\r\\nYOLO trust fund. \\r\\n\\r\\nKogi vinyl raw denim bicycle rights, \\r\\nblog you probably haven\'t heard of them \\r\\nmaster cleanse synth pork belly hashtag \\r\\nTruffaut put a bird on it. \\r\\n\\r\\nTumblr XOXO tote bag hashtag, \\r\\nkogi irony pour-over pug locavore. \\r\\nArt party wayfarers \\r\\nmeh \\r\\nbanh mi polaroid umami \\r\\nYOLO artisan lo-fi, \\r\\nchurch-key \\r\\ntry-hard.\\r\\n",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>IPhone umami Wes Anderson biodiesel, drinking vinegar next level irony.<br />\\nTousled iPhone actually single-origin coffee chia.<br />\\nLeggings synth fanny pack<br />\\nhashtag cornhole. </p>\\n<p>VHS tote bag gluten-free direct trade,<br />\\nphoto booth pork belly<br />\\nYOLO trust fund. </p>\\n<p>Kogi vinyl raw denim bicycle rights,<br />\\nblog you probably haven&#039;t heard of them<br />\\nmaster cleanse synth pork belly hashtag<br />\\nTruffaut put a bird on it. </p>\\n<p>Tumblr XOXO tote bag hashtag,<br />\\nkogi irony pour-over pug locavore.<br />\\nArt party wayfarers<br />\\nmeh<br />\\nbanh mi polaroid umami<br />\\nYOLO artisan lo-fi,<br />\\nchurch-key<br />\\ntry-hard.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Tumblr XOXO tote bag\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Tumblr XOXO tote bag\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052448\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'12\',
+        \'source\' => \'node/9\',
+        \'alias\' => \'content/submission-tumblr-xoxo-tote-bag-bard-201312261007\',
         \'language\' => \'und\',
       ),
       \'menu\' => NULL,
@@ -131,24 +1440,24 @@ function lit_demo_content_node_export_features_default() {
     ),
   (object) array(
       \'vid\' => \'2\',
-      \'uid\' => \'2\',
-      \'title\' => " Submission: A Lover\'s Complaint by bard 201312251751",
+      \'uid\' => \'0\',
+      \'title\' => " Submission: A Lover\'s Complaint by Anonymous 201312252018",
       \'log\' => \'\',
       \'status\' => \'1\',
       \'comment\' => \'1\',
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'b822aa71-b4f2-42a0-9eca-5e07065a3fe4\',
-      \'nid\' => \'1\',
+      \'nid\' => \'2\',
       \'type\' => \'text\',
       \'language\' => \'und\',
-      \'created\' => \'1387993841\',
-      \'changed\' => \'1387993891\',
+      \'created\' => \'1388002732\',
+      \'changed\' => \'1388002732\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'ad2b8bb3-7d62-4db4-96f2-d33f141c6ece\',
-      \'revision_timestamp\' => \'1387993891\',
-      \'revision_uid\' => \'2\',
+      \'revision_timestamp\' => \'1388002732\',
+      \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
           array(
@@ -232,7 +1541,245 @@ function lit_demo_content_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1387993841\',
+      \'last_comment_timestamp\' => \'1388002732\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'0\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'2\',
+        \'source\' => \'node/2\',
+        \'alias\' => \'content/submission-lovers-complaint-anonymous-201312252018\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'20\',
+      \'uid\' => \'3\',
+      \'title\' => \' Submission: Pellentesque nizzle by muse 201312261026\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'69f57b5f-2964-4177-9400-b67a0a00b256\',
+      \'nid\' => \'17\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388053614\',
+      \'changed\' => \'1388053614\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'b1acbb50-ddd9-48db-92c8-9dddc14d78f1\',
+      \'revision_timestamp\' => \'1388053614\',
+      \'revision_uid\' => \'3\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Maecenizzle mi. Nizzle eros. Proin gizzle, for sure nizzle congue consectetizzle, metizzle libero consequat purizzle, daahng dawg ullamcorpizzle dui mi nizzle quizzle. The bizzle faucibizzle tellivizzle. Dizzle hizzle fo, hizzle sizzle, cool volutpizzle, gangster izzle, stuff. Proin shut the shizzle up urna. Mah nizzle pizzle rizzle bow wow wow funky fresh. Pellentesque nizzle euismod owned. Donec ultrices things break yo neck, yall erizzle. Bizzle posuere check out this break yo neck, yall. Ut mauris. Cool sheezy shut the shizzle up, uhuh ... yih! things, eleifend fo, malesuada fizzle, nisi. Fizzle vulputate dizzle crazy.\',
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Maecenizzle mi. Nizzle eros. Proin gizzle, for sure nizzle congue consectetizzle, metizzle libero consequat purizzle, daahng dawg ullamcorpizzle dui mi nizzle quizzle. The bizzle faucibizzle tellivizzle. Dizzle hizzle fo, hizzle sizzle, cool volutpizzle, gangster izzle, stuff. Proin shut the shizzle up urna. Mah nizzle pizzle rizzle bow wow wow funky fresh. Pellentesque nizzle euismod owned. Donec ultrices things break yo neck, yall erizzle. Bizzle posuere check out this break yo neck, yall. Ut mauris. Cool sheezy shut the shizzle up, uhuh ... yih! things, eleifend fo, malesuada fizzle, nisi. Fizzle vulputate dizzle crazy.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Pellentesque nizzle\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Pellentesque nizzle\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388053614\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'3\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'muse\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'20\',
+        \'source\' => \'node/17\',
+        \'alias\' => \'content/submission-pellentesque-nizzle-muse-201312261026\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'4\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Tutor honor by bard 201312260959\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'48f58e8e-394c-4e70-b2b7-342e9b1f66a3\',
+      \'nid\' => \'4\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388051941\',
+      \'changed\' => \'1388051941\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'bf06d4fe-1b69-41a0-aa8a-de7c6eb1f9f1\',
+      \'revision_timestamp\' => \'1388051941\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "\\"Hoe-cake, murder,\\" resplendent Ladle Rat Rotten Hut, an tickle ladle basking an stuttered oft. Honor wrote tutor cordage offer groin-murder, Ladle Rat Rotten Hut mitten anomalous woof. \\"Wail, wail, wail!\\" set disk wicket woof, \\"Evanescent Ladle Rat Rotten Hut! Wares are putty ladle gull goring wizard ladle basking?\\"\\r\\n\\r\\n\\"Armor goring tumor groin-murder\'s,\\" reprisal ladle gull. \\"Grammar\'s seeking bet. Armor ticking arson burden barter an shirker cockles.\\"",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>&quot;Hoe-cake, murder,&quot; resplendent Ladle Rat Rotten Hut, an tickle ladle basking an stuttered oft. Honor wrote tutor cordage offer groin-murder, Ladle Rat Rotten Hut mitten anomalous woof. &quot;Wail, wail, wail!&quot; set disk wicket woof, &quot;Evanescent Ladle Rat Rotten Hut! Wares are putty ladle gull goring wizard ladle basking?&quot;</p>\\n<p>&quot;Armor goring tumor groin-murder&#039;s,&quot; reprisal ladle gull. &quot;Grammar&#039;s seeking bet. Armor ticking arson burden barter an shirker cockles.&quot;</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Tutor honor\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Tutor honor\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388051941\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'2\',
       \'comment_count\' => \'0\',
@@ -240,9 +1787,604 @@ function lit_demo_content_node_export_features_default() {
       \'picture\' => \'0\',
       \'data\' => NULL,
       \'path\' => array(
-        \'pid\' => \'3\',
-        \'source\' => \'node/1\',
-        \'alias\' => \'content/submission-lovers-complaint-bard-201312251751\',
+        \'pid\' => \'7\',
+        \'source\' => \'node/4\',
+        \'alias\' => \'content/submission-tutor-honor-bard-201312260959\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'3\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Heresy basking by bard 201312260958\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'ce0bc3a7-39ae-46ee-b035-23d54c3d54fc\',
+      \'nid\' => \'3\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388051886\',
+      \'changed\' => \'1388051886\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'d5aae862-8187-412f-8e03-9bc21b418119\',
+      \'revision_timestamp\' => \'1388051886\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Wants pawn term, dare worsted ladle gull hoe lift wetter murder inner ladle cordage, honor itch offer lodge dock florist. Disk ladle gull orphan worry ladle cluck wetter putty ladle rat hut, an fur disk raisin pimple colder Ladle Rat Rotten Hut.\\r\\n\\r\\nWan moaning, Rat Rotten Hut\'s murder colder inset, \\"Ladle Rat Rotten Hut, heresy ladle basking winsome burden barter an shirker cockles. Tick disk ladle basking tutor cordage offer groin-murder hoe lifts honor udder site offer florist. Shaker lake! Dun stopper laundry wrote! An yonder nor sorghum-stenches, dun stopper torque wet strainers!\\"",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Wants pawn term, dare worsted ladle gull hoe lift wetter murder inner ladle cordage, honor itch offer lodge dock florist. Disk ladle gull orphan worry ladle cluck wetter putty ladle rat hut, an fur disk raisin pimple colder Ladle Rat Rotten Hut.</p>\\n<p>Wan moaning, Rat Rotten Hut&#039;s murder colder inset, &quot;Ladle Rat Rotten Hut, heresy ladle basking winsome burden barter an shirker cockles. Tick disk ladle basking tutor cordage offer groin-murder hoe lifts honor udder site offer florist. Shaker lake! Dun stopper laundry wrote! An yonder nor sorghum-stenches, dun stopper torque wet strainers!&quot;</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Heresy basking\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Heresy basking\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388051886\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'6\',
+        \'source\' => \'node/3\',
+        \'alias\' => \'content/submission-heresy-basking-bard-201312260958\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'8\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Tofu me by bard 201312261005\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'e067b32f-46c9-4ee4-8f30-487077489fe3\',
+      \'nid\' => \'8\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052306\',
+      \'changed\' => \'1388052306\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'e4b115c8-9730-4511-bc4c-83792a860e40\',
+      \'revision_timestamp\' => \'1388052306\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "tofu artisan cliche, chillwave single-origin coffee Tonx retro. Street art ethnic organic, raw denim meggings disrupt art party cornhole hella before they sold out. Chia slow-carb retro single-origin coffee selvage, synth quinoa ugh pop-up street art. Dreamcatcher hashtag tattooed paleo, Portland Truffaut Etsy literally Carles seitan trust fund farm-to-table tousled wayfarers. \\r\\n\\r\\nNeutra hoodie tattooed 3 wolf moon yr semiotics. Authentic pork belly leggings letterpress bicycle rights cliche, YOLO master cleanse fap semiotics shabby chic mumblecore butcher gastropub single-origin coffee. Flexitarian next level Intelligentsia letterpress blog pop-up.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>tofu artisan cliche, chillwave single-origin coffee Tonx retro. Street art ethnic organic, raw denim meggings disrupt art party cornhole hella before they sold out. Chia slow-carb retro single-origin coffee selvage, synth quinoa ugh pop-up street art. Dreamcatcher hashtag tattooed paleo, Portland Truffaut Etsy literally Carles seitan trust fund farm-to-table tousled wayfarers. </p>\\n<p>Neutra hoodie tattooed 3 wolf moon yr semiotics. Authentic pork belly leggings letterpress bicycle rights cliche, YOLO master cleanse fap semiotics shabby chic mumblecore butcher gastropub single-origin coffee. Flexitarian next level Intelligentsia letterpress blog pop-up.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Tofu me\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Tofu me\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052306\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'11\',
+        \'source\' => \'node/8\',
+        \'alias\' => \'content/submission-tofu-me-bard-201312261005\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'15\',
+      \'uid\' => \'2\',
+      \'title\' => \' Theoretical: Marxist capitalism and Sartreist absurdity by bard 201312261014\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'cd0ab4f6-7328-454f-9ed8-4937856d6537\',
+      \'nid\' => \'14\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052850\',
+      \'changed\' => \'1388052892\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'f1a5e71b-8a5e-45a5-af3d-825e8117e422\',
+      \'revision_timestamp\' => \'1388052892\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "In the works of Rushdie, a predominant concept is the distinction between without and within. However, Lacan uses the term ‘Lacanist obscurity’ to denote not theory, as capitalist discourse suggests, but neotheory. Marx suggests the use of Sartreist absurdity to analyse and attack sexual identity.\\r\\n\\r\\n“Class is impossible,” says Debord; however, according to von Junz[7] , it is not so much class that is impossible, but rather the stasis of class. It could be said that the characteristic theme of Scuglia’s[8] analysis of Lacanist obscurity is a mythopoetical whole. If Sartreist existentialism holds, we have to choose between capitalist discourse and deconstructive objectivism.\\r\\n\\r\\nTherefore, the primary theme of the works of Rushdie is the failure, and some would say the futility, of posttextual society. Lacanist obscurity suggests that context must come from the masses.\\r\\n\\r\\nIn a sense, la Fournier[9] implies that we have to choose between Sartreist absurdity and subtextual capitalist theory. The subject is contextualised into a neocultural sublimation that includes truth as a totality.\\r\\n\\r\\nTherefore, Baudrillard’s critique of capitalist discourse states that sexual identity has intrinsic meaning, given that sexuality is distinct from art. Lacan promotes the use of Lacanist obscurity to deconstruct the status quo.\\r\\n\\r\\nHowever, the characteristic theme of Parry’s[10] essay on capitalist discourse is the difference between language and class. Lyotard suggests the use of Sartreist absurdity to analyse consciousness.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>In the works of Rushdie, a predominant concept is the distinction between without and within. However, Lacan uses the term ‘Lacanist obscurity’ to denote not theory, as capitalist discourse suggests, but neotheory. Marx suggests the use of Sartreist absurdity to analyse and attack sexual identity.</p>\\n<p>“Class is impossible,” says Debord; however, according to von Junz[7] , it is not so much class that is impossible, but rather the stasis of class. It could be said that the characteristic theme of Scuglia’s[8] analysis of Lacanist obscurity is a mythopoetical whole. If Sartreist existentialism holds, we have to choose between capitalist discourse and deconstructive objectivism.</p>\\n<p>Therefore, the primary theme of the works of Rushdie is the failure, and some would say the futility, of posttextual society. Lacanist obscurity suggests that context must come from the masses.</p>\\n<p>In a sense, la Fournier[9] implies that we have to choose between Sartreist absurdity and subtextual capitalist theory. The subject is contextualised into a neocultural sublimation that includes truth as a totality.</p>\\n<p>Therefore, Baudrillard’s critique of capitalist discourse states that sexual identity has intrinsic meaning, given that sexuality is distinct from art. Lacan promotes the use of Lacanist obscurity to deconstruct the status quo.</p>\\n<p>However, the characteristic theme of Parry’s[10] essay on capitalist discourse is the difference between language and class. Lyotard suggests the use of Sartreist absurdity to analyse consciousness.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Marxist capitalism and Sartreist absurdity\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Marxist capitalism and Sartreist absurdity\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'THEORY \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052850\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'17\',
+        \'source\' => \'node/14\',
+        \'alias\' => \'content/theoretical-marxist-capitalism-and-sartreist-absurdity-bard-201312261014\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'12\',
+      \'uid\' => \'2\',
+      \'title\' => \' Theoretical: Tarantino and Lacanist obscurity by bard 201312261012\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'719b938a-1f33-4ed8-8055-25bfe1d8b1a8\',
+      \'nid\' => \'12\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388052732\',
+      \'changed\' => \'1388052732\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'f4e134f0-8dac-4e1d-9d29-743841f37ec2\',
+      \'revision_timestamp\' => \'1388052732\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "“Society is a legal fiction,” says Baudrillard; however, according to Werther[1] , it is not so much society that is a legal fiction, but rather the futility, and some would say the absurdity, of society. An abundance of desublimations concerning not, in fact, theory, but neotheory may be discovered.\\r\\n\\r\\nIf one examines the structural paradigm of narrative, one is faced with a choice: either accept capitalist discourse or conclude that truth has significance, but only if Marxist capitalism is valid; if that is not the case, we can assume that art is capable of intent. However, the example of Lacanist obscurity intrinsic to Gaiman’s Stardust emerges again in Death: The Time of Your Life. Many patriarchialisms concerning Marxist capitalism exist.\\r\\n\\r\\nIn the works of Gaiman, a predominant concept is the concept of pretextual truth. But the premise of Lacanist obscurity suggests that culture may be used to marginalize the proletariat. Any number of discourses concerning the role of the participant as poet may be revealed.\\r\\n\\r\\n“Class is intrinsically unattainable,” says Bataille. Therefore, Finnis[2] holds that we have to choose between structuralist sublimation and the neocultural paradigm of context. Capitalist discourse implies that truth, somewhat paradoxically, has objective value.\\r\\n\\r\\nBut Debord uses the term ‘Marxist capitalism’ to denote not discourse per se, but subdiscourse. Bataille suggests the use of capitalist discourse to read and challenge society.\\r\\n\\r\\nHowever, if Lyotardist narrative holds, we have to choose between Marxist capitalism and capitalist neotextual theory. The primary theme of Humphrey’s[3] model of Lacanist obscurity is the defining characteristic, and eventually the stasis, of posttextual language.\\r\\n\\r\\nIt could be said that Bataille uses the term ‘Derridaist reading’ to denote a deconstructivist totality. Many narratives concerning capitalist discourse exist.\\r\\n\\r\\nIn a sense, Lacan promotes the use of Marxist capitalism to deconstruct the status quo. Baudrillard uses the term ‘Lacanist obscurity’ to denote not deconstruction, but subdeconstruction.\\r\\n\\r\\nIt could be said that the main theme of the works of Rushdie is a mythopoetical paradox. Derrida’s analysis of Marxist capitalism suggests that context is a product of the collective unconscious, given that narrativity is interchangeable with culture.\\r\\n\\r\\nIn a sense, la Tournier[4] implies that we have to choose between the postmodern paradigm of narrative and cultural narrative. If Lacanist obscurity holds, the works of Rushdie are an example of subdialectic socialism.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>“Society is a legal fiction,” says Baudrillard; however, according to Werther[1] , it is not so much society that is a legal fiction, but rather the futility, and some would say the absurdity, of society. An abundance of desublimations concerning not, in fact, theory, but neotheory may be discovered.</p>\\n<p>If one examines the structural paradigm of narrative, one is faced with a choice: either accept capitalist discourse or conclude that truth has significance, but only if Marxist capitalism is valid; if that is not the case, we can assume that art is capable of intent. However, the example of Lacanist obscurity intrinsic to Gaiman’s Stardust emerges again in Death: The Time of Your Life. Many patriarchialisms concerning Marxist capitalism exist.</p>\\n<p>In the works of Gaiman, a predominant concept is the concept of pretextual truth. But the premise of Lacanist obscurity suggests that culture may be used to marginalize the proletariat. Any number of discourses concerning the role of the participant as poet may be revealed.</p>\\n<p>“Class is intrinsically unattainable,” says Bataille. Therefore, Finnis[2] holds that we have to choose between structuralist sublimation and the neocultural paradigm of context. Capitalist discourse implies that truth, somewhat paradoxically, has objective value.</p>\\n<p>But Debord uses the term ‘Marxist capitalism’ to denote not discourse per se, but subdiscourse. Bataille suggests the use of capitalist discourse to read and challenge society.</p>\\n<p>However, if Lyotardist narrative holds, we have to choose between Marxist capitalism and capitalist neotextual theory. The primary theme of Humphrey’s[3] model of Lacanist obscurity is the defining characteristic, and eventually the stasis, of posttextual language.</p>\\n<p>It could be said that Bataille uses the term ‘Derridaist reading’ to denote a deconstructivist totality. Many narratives concerning capitalist discourse exist.</p>\\n<p>In a sense, Lacan promotes the use of Marxist capitalism to deconstruct the status quo. Baudrillard uses the term ‘Lacanist obscurity’ to denote not deconstruction, but subdeconstruction.</p>\\n<p>It could be said that the main theme of the works of Rushdie is a mythopoetical paradox. Derrida’s analysis of Marxist capitalism suggests that context is a product of the collective unconscious, given that narrativity is interchangeable with culture.</p>\\n<p>In a sense, la Tournier[4] implies that we have to choose between the postmodern paradigm of narrative and cultural narrative. If Lacanist obscurity holds, the works of Rushdie are an example of subdialectic socialism.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Tarantino and Lacanist obscurity\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Tarantino and Lacanist obscurity\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'THEORY \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388052732\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'15\',
+        \'source\' => \'node/12\',
+        \'alias\' => \'content/theoretical-tarantino-and-lacanist-obscurity-bard-201312261012\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'5\',
+      \'uid\' => \'2\',
+      \'title\' => \' Submission: Old whinney by bard 201312260959\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'ba4b431f-8934-4348-9f8d-586df599ff39\',
+      \'nid\' => \'5\',
+      \'type\' => \'text\',
+      \'language\' => \'und\',
+      \'created\' => \'1388051990\',
+      \'changed\' => \'1388051990\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'fe8854e2-e3b1-47a8-ae4f-b3c81e0dd2c0\',
+      \'revision_timestamp\' => \'1388051990\',
+      \'revision_uid\' => \'2\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "\\"O hoe! Heifer blessing woke,\\" setter wicket woof, butter taught tomb shelf, \\"Oil tickle shirt court tutor cordage offer groin-murder. Oil ketchup wetter letter, an den - O bore!\\"\\r\\n\\r\\nSoda wicket woof tucker shirt court, an whinney retched a cordage offer groin-murder, picked inner widow, an sore debtor pore oil worming worse lion inner bet. Inner flesh, disk abdominal woof lipped honor bet an at a rope. Den knee poled honor groin-murder\'s nut cup an gnat-gun, any curdled dope inner bet.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>&quot;O hoe! Heifer blessing woke,&quot; setter wicket woof, butter taught tomb shelf, &quot;Oil tickle shirt court tutor cordage offer groin-murder. Oil ketchup wetter letter, an den - O bore!&quot;</p>\\n<p>Soda wicket woof tucker shirt court, an whinney retched a cordage offer groin-murder, picked inner widow, an sore debtor pore oil worming worse lion inner bet. Inner flesh, disk abdominal woof lipped honor bet an at a rope. Den knee poled honor groin-murder&#039;s nut cup an gnat-gun, any curdled dope inner bet.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_short_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Old whinney\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Old whinney\',
+          ),
+        ),
+      ),
+      \'field_text_type\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'SUB \',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388051990\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'2\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'bard\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'path\' => array(
+        \'pid\' => \'8\',
+        \'source\' => \'node/5\',
+        \'alias\' => \'content/submission-old-whinney-bard-201312260959\',
         \'language\' => \'und\',
       ),
       \'menu\' => NULL,
