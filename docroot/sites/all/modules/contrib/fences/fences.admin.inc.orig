@@ -14,10 +14,6 @@ function _fences_theme($existing, $type, $theme, $path) {
 
   $supported_hooks = array('field');
   foreach ($supported_hooks as $hook) {
-    // If there are no implementation then skip the iteration.
-    if (empty($existing[$hook])) {
-      continue;
-    }
     foreach ($fences[$hook] as $suggestion => $data) {
       // Manually register the suggestions for a module, but let hook_theme
       // auto-discover theme-owned suggestions as it normally does.
