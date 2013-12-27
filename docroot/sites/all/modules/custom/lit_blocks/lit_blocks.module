@@ -27,6 +27,9 @@ function lit_blocks_block_view($delta = '') {
 
   switch ($delta) {
     case 'landing_page_options':
+    	$module_path = drupal_get_path('module', 'lit_blocks');
+    	$full_path = $module_path .'/lit_blocks.css';
+    	drupal_add_css($full_path);
       //$block['subject'] = t('Landing Page Options');
       $block['subject'] = '';
       $output = array(
