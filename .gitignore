@@ -43,3 +43,4 @@ docroot/sites/*/private
 ehthumbs.db
 Icon?
 Thumbs.db
+.sass-cache
