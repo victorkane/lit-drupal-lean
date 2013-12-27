@@ -72,6 +72,7 @@ dependencies[] = pathauto
 dependencies[] = realname
 dependencies[] = strongarm
 dependencies[] = token
+dependencies[] = fences
 ; Path management
 dependencies[] = globalredirect
 ; Rules
@@ -186,4 +187,3 @@ variables[theme_default] = 'litthemezen'
 variables[update_last_email_notification] = 1387725788
 variables[workbench_moderation_default_state_critique] = 'draft'
 variables[workbench_moderation_default_state_text] = 'draft'
-

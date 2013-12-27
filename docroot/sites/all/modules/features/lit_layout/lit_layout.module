@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Lit Layout feature.
  */
+
+include_once 'lit_layout.features.inc';

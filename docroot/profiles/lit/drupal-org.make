@@ -103,6 +103,9 @@ projects[views_slideshow][subdir] = "contrib"
 projects[workbench_moderation][version] = "1.3"
 projects[workbench_moderation][subdir] = "contrib"
 
+projects[fences][version] = "1.0"
+projects[fences][subdir] = "contrib"
+
 ; +++++ Themes +++++
 
 ; adaptivetheme
