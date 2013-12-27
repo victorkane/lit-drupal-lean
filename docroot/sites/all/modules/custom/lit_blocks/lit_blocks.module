@@ -9,14 +9,9 @@
  * Implements hook_block_info().
  */
 function lit_blocks_block_info() {
-  // This example comes from node.module.
-  $blocks['syndicate'] = array(
-    'info' => t('Syndicate'),
+  $blocks['landing_page_options'] = array(
+    'info' => t('Landing page options'),
     'cache' => DRUPAL_NO_CACHE
-  );
-
-  $blocks['recent'] = array(
-    'info' => t('Recent content'),
     // DRUPAL_CACHE_PER_ROLE will be assumed.
   );
 
@@ -31,71 +26,31 @@ function lit_blocks_block_view($delta = '') {
   $block = array();
 
   switch ($delta) {
-    case 'syndicate':
-      $block['subject'] = t('Syndicate');
-      $block['content'] = array(
-        '#theme' => 'feed_icon',
-        '#url' => 'rss.xml',
-        '#title' => t('Syndicate'),
+    case 'landing_page_options':
+      //$block['subject'] = t('Landing Page Options');
+      $block['subject'] = '';
+      $output = array(
+      	'blokcito01' => array(
+          '#type' => 'markup',
+          '#prefix' => '<div class="blokcito">',
+          '#suffix' => '</div>',
+      		'#markup' => '<p>Hola, chicos (1) !</p>',
+        ),
+      	'blokcito02' => array(
+          '#type' => 'markup',
+          '#prefix' => '<div class="blokcito">',
+          '#suffix' => '</div>',
+      		'#markup' => '<p>Hola, chicos (2) !</p>',
+        ),
+      	'blokcito03' => array(
+          '#type' => 'markup',
+          '#prefix' => '<div class="blokcito">',
+          '#suffix' => '</div>',
+      		'#markup' => '<p>Hola, chicos (3) !</p>',
+        ),
       );
-      break;
-
-    case 'recent':
-      if (user_access('access content')) {
-        $block['subject'] = t('Recent content');
-        if ($nodes = node_get_recent(variable_get('node_recent_block_count', 10))) {
-          $block['content'] = array(
-            '#theme' => 'node_recent_block',
-            '#nodes' => $nodes,
-          );
-        } else {
-          $block['content'] = t('No content available.');
-        }
-      }
+      $block['content'] = $output;
       break;
   }
   return $block;
-}
-
-/**
- * Implements hook_block_configure().
- */
-function lit_blocks_block_configure($delta = '') {
-  // This example comes from node.module.
-  $form = array();
-  if ($delta == 'recent') {
-    $form['node_recent_block_count'] = array(
-      '#type' => 'select',
-      '#title' => t('Number of recent content items to display'),
-      '#default_value' => variable_get('node_recent_block_count', 10),
-      '#options' => drupal_map_assoc(array(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30)),
-    );
-  }
-  return $form;
-}
-
-/**
- * Implements hook_block_save().
- */
-function lit_blocks_block_save($delta = '', $edit = array()) {
-  // This example comes from node.module.
-  if ($delta == 'recent') {
-    variable_set('node_recent_block_count', $edit['node_recent_block_count']);
-  }
-}
-
-/**
- * Implements hook_menu().
- */
-function lit_blocks_menu() {
-  $items = array();
-  
-  $items['sites/all/modules/custom'] = array(
-    'title' => 'myPage',
-    'page callback' => 'example_page',
-    'page arguments' => ,
-    'access arguments' => array('access content'),
-    'type' => MENU_SUGGESTED_ITEM,
-  );
-  return $items;
 }
