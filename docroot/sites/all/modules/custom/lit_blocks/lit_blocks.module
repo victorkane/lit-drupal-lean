@@ -37,10 +37,10 @@ function lit_blocks_block_view($delta = '') {
       		'#markup' => '<p>Hola, chicos (1) !</p>',
         ),
       	'blokcito02' => array(
-          '#type' => 'markup',
+          '#items' => array('Do this', 'Do that', 'Do the other!'),
+          '#theme' => 'item_list',
           '#prefix' => '<div class="blokcito">',
           '#suffix' => '</div>',
-      		'#markup' => '<p>Hola, chicos (2) !</p>',
         ),
       	'blokcito03' => array(
           '#type' => 'markup',
