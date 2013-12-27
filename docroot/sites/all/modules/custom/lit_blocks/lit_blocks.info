@@ -1,0 +1,6 @@
+name = Lit blocks
+description = Implements blocks for Lit app
+dependencies[] = block
+package = Lit
+core = 7.x
+files[] = tests/lit_blocks.test
