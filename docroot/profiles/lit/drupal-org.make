@@ -106,6 +106,9 @@ projects[workbench_moderation][subdir] = "contrib"
 projects[fences][version] = "1.0"
 projects[fences][subdir] = "contrib"
 
+projects[context][version] = "3.1"
+projects[context][subdir] = "contrib"
+
 ; +++++ Themes +++++
 
 ; adaptivetheme

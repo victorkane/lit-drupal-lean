@@ -13,6 +13,10 @@ dependencies[] = module_filter
 ; Chaos tool suite
 dependencies[] = ctools
 dependencies[] = views_content
+; Context
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = context_layouts
 ; Core
 dependencies[] = block
 dependencies[] = comment

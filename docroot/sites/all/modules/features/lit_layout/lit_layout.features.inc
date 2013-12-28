@@ -12,3 +12,20 @@ function lit_layout_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function lit_layout_node_info() {
+  $items = array(
+    'section' => array(
+      'name' => t('Section'),
+      'base' => 'node_content',
+      'description' => t('A static page to be managed by its context via URL alias'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
