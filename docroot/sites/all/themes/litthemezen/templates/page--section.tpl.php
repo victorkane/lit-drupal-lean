@@ -50,8 +50,12 @@
   </header>
 
   <div id="main">
-    <h2 class="section-title"> <?php print $section_title; ?> </h2>
-    <h3 class="section-subtitle"> <?php print $section_subtitle; ?> </h3>
+    <?php if (isset($section_title)): ?>
+      <h2 class="section-title"> <?php print $section_title; ?> </h2>
+    <?php endif; ?>
+    <?php if (isset($section_subtitle)): ?>
+      <h3 class="section-subtitle"> <?php print $section_subtitle; ?> </h3>
+    <?php endif; ?>
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>

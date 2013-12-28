@@ -34,22 +34,24 @@ function lit_blocks_block_view($delta = '') {
       $block['subject'] = '';
       $output = array(
       	'blokcito01' => array(
-          '#type' => 'markup',
-          '#prefix' => '<div class="blokcito">',
-          '#suffix' => '</div>',
-      		'#markup' => '<p>Hola, chicos (1) !</p>',
+   			  '#type' => 'link',
+   			  '#title' => 'About Literary Workshop',
+      		'#href' => 'section/what-is-literary-workshop',
+          '#prefix' => '<div class="blokcito"><p>',
+      		'#suffix' => ' Find out about our community!</p></div>',
         ),
       	'blokcito02' => array(
-          '#items' => array('Do this', 'Do that', 'Do the other!'),
-          '#theme' => 'item_list',
-          '#prefix' => '<div class="blokcito">',
-          '#suffix' => '</div>',
+   			  '#type' => 'link',
+   			  '#title' => 'Sign up as a Literary Workshop member',
+      		'#href' => 'user/register',
+          '#prefix' => '<div class="blokcito"><p>Critique and be critiqued! ',
+      		'#suffix' => '</p></div>',
         ),
       	'blokcito03' => array(
           '#type' => 'markup',
           '#prefix' => '<div class="blokcito">',
           '#suffix' => '</div>',
-      		'#markup' => '<p>Hola, chicos (3) !</p>',
+      		'#markup' => '<p>Participate right now! Just try out the demo for yourself!</p>',
         ),
       );
       $block['content'] = $output;
