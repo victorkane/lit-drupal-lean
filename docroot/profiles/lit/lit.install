@@ -124,23 +124,22 @@ function lit_install() {
   		'init' => 'bard@bardland.org',
   		'roles' => array(
   				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
-  				3 => 'workshop member',
+  				4 => 'demo user',
   		),
   );
   // The first parameter is sent blank so a new user is created.
   user_save('', $new_user);
   $new_user = array(
   		'name' => 'muse',
-  		'pass' => 'muse', // note: do not md5 the password
+  		'pass' => 'muse', 
   		'mail' => 'muse@bardland.org',
   		'status' => 1,
   		'init' => 'muse@bardland.org',
   		'roles' => array(
   				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
-  				3 => 'workshop member',
+  				4 => 'demo user',
   		),
   );
-  // The first parameter is sent blank so a new user is created.
   user_save('', $new_user);
   // revert features to ensure they are all installed
   $features = array(
@@ -155,4 +154,3 @@ function lit_install() {
   // ignore any other install messages
   drupal_get_messages();
 }
-

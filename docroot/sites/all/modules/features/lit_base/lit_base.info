@@ -36,6 +36,7 @@ features[user_permission][] = edit any critique content
 features[user_permission][] = edit any text content
 features[user_permission][] = edit own critique content
 features[user_permission][] = edit own text content
+features[user_role][] = demo user
 features[user_role][] = workshop member
 features[variable][] = additional_settings__active_tab_critique
 features[variable][] = additional_settings__active_tab_text

@@ -27,6 +27,7 @@ function lit_base_user_default_permissions() {
     'name' => 'create critique content',
     'roles' => array(
       'administrator' => 'administrator',
+      'demo user' => 'demo user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -37,6 +38,7 @@ function lit_base_user_default_permissions() {
     'name' => 'create text content',
     'roles' => array(
       'administrator' => 'administrator',
+      'demo user' => 'demo user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -74,6 +76,7 @@ function lit_base_user_default_permissions() {
     'name' => 'delete own text content',
     'roles' => array(
       'administrator' => 'administrator',
+      'demo user' => 'demo user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -102,6 +105,7 @@ function lit_base_user_default_permissions() {
     'name' => 'edit own critique content',
     'roles' => array(
       'administrator' => 'administrator',
+      'demo user' => 'demo user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
@@ -112,6 +116,7 @@ function lit_base_user_default_permissions() {
     'name' => 'edit own text content',
     'roles' => array(
       'administrator' => 'administrator',
+      'demo user' => 'demo user',
       'workshop member' => 'workshop member',
     ),
     'module' => 'node',
