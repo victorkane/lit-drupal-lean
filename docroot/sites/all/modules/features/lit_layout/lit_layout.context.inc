@@ -43,6 +43,12 @@ function lit_layout_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-9',
         ),
+        'lit_blocks-landing_page_options' => array(
+          'module' => 'lit_blocks',
+          'delta' => 'landing_page_options',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
     'theme' => array(
