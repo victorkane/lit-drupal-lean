@@ -18,7 +18,7 @@ function lit_layout_default_fe_block_settings() {
     'delta' => 'landing_page_options',
     'module' => 'lit_blocks',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'litthemezen' => array(
@@ -35,7 +35,7 @@ function lit_layout_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['masquerade-masquerade'] = array(
