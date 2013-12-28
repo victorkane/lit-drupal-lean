@@ -124,7 +124,7 @@ function lit_install() {
   		'init' => 'bard@bardland.org',
   		'roles' => array(
   				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
-  				4 => 'demo user',
+  				3 => 'demo user',
   		),
   );
   // The first parameter is sent blank so a new user is created.
@@ -137,7 +137,7 @@ function lit_install() {
   		'init' => 'muse@bardland.org',
   		'roles' => array(
   				DRUPAL_AUTHENTICATED_RID => 'authenticated user',
-  				4 => 'demo user',
+  				3 => 'demo user',
   		),
   );
   user_save('', $new_user);
