@@ -23,12 +23,12 @@ function lit_layout_node_export_features_default() {
       \'nid\' => \'21\',
       \'type\' => \'section\',
       \'language\' => \'und\',
-      \'created\' => \'1388241359\',
-      \'changed\' => \'1388241359\',
+      \'created\' => \'1388242374\',
+      \'changed\' => \'1388242374\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'bb3731c6-798c-4ab9-a94e-2a37ae722457\',
-      \'revision_timestamp\' => \'1388241359\',
+      \'revision_timestamp\' => \'1388242374\',
       \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
@@ -97,7 +97,7 @@ function lit_layout_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1388241359\',
+      \'last_comment_timestamp\' => \'1388242374\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'0\',
       \'comment_count\' => \'0\',
@@ -105,7 +105,7 @@ function lit_layout_node_export_features_default() {
       \'picture\' => \'0\',
       \'data\' => NULL,
       \'path\' => array(
-        \'pid\' => \'24\',
+        \'pid\' => \'23\',
         \'source\' => \'node/21\',
         \'alias\' => \'section/what-is-literary-workshop\',
         \'language\' => \'und\',

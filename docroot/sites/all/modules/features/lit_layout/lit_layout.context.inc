@@ -45,6 +45,13 @@ function lit_layout_context_default_contexts() {
         ),
       ),
     ),
+    'theme' => array(
+      'title' => 'About',
+      'subtitle' => 'What our community is like',
+    ),
+    'theme_html' => array(
+      'class' => 'section-about',
+    ),
   );
   $context->condition_mode = 1;
 
