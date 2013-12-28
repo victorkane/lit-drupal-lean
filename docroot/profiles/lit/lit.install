@@ -153,4 +153,42 @@ function lit_install() {
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
   drupal_get_messages();
+  
+  // Fix authorship of demo texts
+  // 
+  // get demo users
+  $uids = array();
+  
+  // Use $query for readability
+  $query = 'SELECT DISTINCT(ur.uid)
+  FROM {users_roles} AS ur
+  WHERE ur.rid IN (:rids)';
+  $result = db_query($query, array(':rids' => array(3)));
+  
+  foreach ($result as $row) {
+  	$uids[] = $row->uid;
+  }
+  
+  // users will have their uid as key
+  // we need an array of uids so we use $uids directly
+  // and don't load actual users
+  //$users = user_load_multiple($uids);
+  
+  // set min and max for rand()
+  $min = 0;
+  $max = count($uids) - 1;
+  
+  // get texts
+  $type = 'text';
+  $nodes = node_load_multiple(array(), array('type' => $type));
+  
+  foreach ($nodes as $node) {
+  	// get random user uid
+  	$num = rand($min, $max);
+  	$uid = $uids[$num];
+  	// initialize node with uid
+  	$node->uid = $uid;
+  	// save node
+  	node_save($node);
+  }
 }
