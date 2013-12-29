@@ -11,6 +11,109 @@ function lit_layout_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
+      \'vid\' => \'25\',
+      \'uid\' => \'1\',
+      \'title\' => \'Demo\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'1\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'841a80e3-3533-4453-b54d-0b761e80df66\',
+      \'nid\' => \'22\',
+      \'type\' => \'section\',
+      \'language\' => \'und\',
+      \'created\' => \'1388316065\',
+      \'changed\' => \'1388318236\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'a91fa798-f2c7-484d-bddd-f001d75c4ac4\',
+      \'revision_timestamp\' => \'1388318236\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.\\r\\n\\r\\nCheck out Literary Workshop as user bard.\\r\\n\\r\\nCheck out Literary Workshop as user muse.",
+            \'summary\' => \'\',
+            \'format\' => \'plain_text\',
+            \'safe_value\' => "<p>Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.</p>\\n<p>Check out Literary Workshop as user bard.</p>\\n<p>Check out Literary Workshop as user muse.</p>\\n",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'cid\' => \'0\',
+      \'last_comment_timestamp\' => \'1388316065\',
+      \'last_comment_name\' => NULL,
+      \'last_comment_uid\' => \'1\',
+      \'comment_count\' => \'0\',
+      \'name\' => \'admin\',
+      \'picture\' => \'0\',
+      \'data\' => \'b:0;\',
+      \'path\' => array(
+        \'pid\' => \'25\',
+        \'source\' => \'node/22\',
+        \'alias\' => \'section/demo\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
       \'vid\' => \'21\',
       \'uid\' => \'0\',
       \'title\' => \'What is Literary Workshop?\',
@@ -23,12 +126,12 @@ function lit_layout_node_export_features_default() {
       \'nid\' => \'21\',
       \'type\' => \'section\',
       \'language\' => \'und\',
-      \'created\' => \'1388246135\',
-      \'changed\' => \'1388246135\',
+      \'created\' => \'1388263665\',
+      \'changed\' => \'1388263665\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'bb3731c6-798c-4ab9-a94e-2a37ae722457\',
-      \'revision_timestamp\' => \'1388246135\',
+      \'revision_timestamp\' => \'1388263665\',
       \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
@@ -97,7 +200,7 @@ function lit_layout_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1388246135\',
+      \'last_comment_timestamp\' => \'1388263665\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'0\',
       \'comment_count\' => \'0\',
