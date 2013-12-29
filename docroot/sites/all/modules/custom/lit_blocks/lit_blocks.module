@@ -48,10 +48,11 @@ function lit_blocks_block_view($delta = '') {
       		'#suffix' => '</p></div>',
         ),
       	'blokcito03' => array(
-          '#type' => 'markup',
-          '#prefix' => '<div class="blokcito">',
-          '#suffix' => '</div>',
-      		'#markup' => '<p>Participate right now! Just try out the demo for yourself!</p>',
+          '#type' => 'link',
+      		'#title' => 'try out',
+      		'#href' => 'section/demo',
+          '#prefix' => '<div class="blokcito"><p>Participate right now! Just ',
+          '#suffix' => ' the demo for yourself!</p></div>',
         ),
       );
       $block['content'] = $output;

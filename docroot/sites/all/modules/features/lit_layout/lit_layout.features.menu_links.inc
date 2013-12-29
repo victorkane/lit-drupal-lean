@@ -32,9 +32,32 @@ function lit_layout_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
+  // Exported menu link: menu-footer-menu_demo:node/22
+  $menu_links['menu-footer-menu_demo:node/22'] = array(
+    'menu_name' => 'menu-footer-menu',
+    'link_path' => 'node/22',
+    'router_path' => 'node/%',
+    'link_title' => 'Demo',
+    'options' => array(
+      'attributes' => array(
+        'class' => array(
+          0 => 'footer-menu-item',
+        ),
+      ),
+      'identifier' => 'menu-footer-menu_demo:node/22',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 5,
+    'customized' => 1,
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('About');
+  t('Demo');
 
 
   return $menu_links;
