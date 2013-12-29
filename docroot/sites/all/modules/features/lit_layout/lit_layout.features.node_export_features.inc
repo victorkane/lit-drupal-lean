@@ -11,7 +11,7 @@ function lit_layout_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
-      \'vid\' => \'21\',
+      \'vid\' => \'23\',
       \'uid\' => \'0\',
       \'title\' => \'Demo\',
       \'log\' => \'\',
@@ -19,24 +19,24 @@ function lit_layout_node_export_features_default() {
       \'comment\' => \'1\',
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
-      \'vuuid\' => \'841a80e3-3533-4453-b54d-0b761e80df66\',
+      \'vuuid\' => \'d0764d70-de33-4c03-9ebd-c10cf266ca43\',
       \'nid\' => \'21\',
       \'type\' => \'section\',
       \'language\' => \'und\',
       \'created\' => \'1388319274\',
-      \'changed\' => \'1388319274\',
+      \'changed\' => \'1388334756\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'a91fa798-f2c7-484d-bddd-f001d75c4ac4\',
-      \'revision_timestamp\' => \'1388319274\',
-      \'revision_uid\' => \'0\',
+      \'revision_timestamp\' => \'1388334756\',
+      \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
           array(
-            \'value\' => "Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.\\r\\n\\r\\nCheck out Literary Workshop as user bard.\\r\\n\\r\\nCheck out Literary Workshop as user muse.",
+            \'value\' => "Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.\\r\\n\\r\\n<a href=\\"/user/demo/2\\">Check out Literary Workshop as user bard</a>.\\r\\n\\r\\n<a href=\\"/user/demo/3\\">Check out Literary Workshop as user muse</a>.",
             \'summary\' => \'\',
-            \'format\' => \'plain_text\',
-            \'safe_value\' => "<p>Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.</p>\\n<p>Check out Literary Workshop as user bard.</p>\\n<p>Check out Literary Workshop as user muse.</p>\\n",
+            \'format\' => \'filtered_html\',
+            \'safe_value\' => "<p>Here you can try out Literary Workshop for yourself, without joining. Which is free and painless also, and makes for a rewarding experience, but you may want to make sure this community works for you first.</p>\\n<p><a href=\\"/user/demo/2\\">Check out Literary Workshop as user bard</a>.</p>\\n<p><a href=\\"/user/demo/3\\">Check out Literary Workshop as user muse</a>.</p>\\n",
             \'safe_summary\' => \'\',
           ),
         ),
