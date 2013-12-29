@@ -17,11 +17,6 @@ function lit_layout_context_default_contexts() {
   $context->description = 'What is Literary Workshop section';
   $context->tag = 'section';
   $context->conditions = array(
-    'menu' => array(
-      'values' => array(
-        'node/21' => 'node/21',
-      ),
-    ),
     'path' => array(
       'values' => array(
         'section/what-is-literary-workshop' => 'section/what-is-literary-workshop',
@@ -74,11 +69,6 @@ function lit_layout_context_default_contexts() {
   $context->description = 'Try out the demo for yourself!';
   $context->tag = 'section';
   $context->conditions = array(
-    'menu' => array(
-      'values' => array(
-        'node/22' => 'node/22',
-      ),
-    ),
     'path' => array(
       'values' => array(
         'section/demo' => 'section/demo',
