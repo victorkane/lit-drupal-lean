@@ -7,6 +7,9 @@ api = "2"
 projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
 
+projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][subdir] = "contrib"
+
 projects[module_filter][version] = "2.0-alpha2"
 projects[module_filter][subdir] = "contrib"
 

@@ -63,6 +63,7 @@ dependencies[] = node_export_features
 dependencies[] = nodequeue
 ; Other
 dependencies[] = advanced_help
+dependencies[] = better_formats
 dependencies[] = auto_nodetitle
 dependencies[] = diff
 dependencies[] = entity
