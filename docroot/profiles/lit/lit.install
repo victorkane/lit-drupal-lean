@@ -155,6 +155,7 @@ function lit_install() {
   drupal_get_messages();
   
   // Fix authorship of demo texts
+  // and set sticky field in order to mark as demo content
   // 
   // get demo users
   $uids = array();
@@ -188,6 +189,8 @@ function lit_install() {
   	$uid = $uids[$num];
   	// initialize node with uid
   	$node->uid = $uid;
+    // mark as sticky as convention to flag demo texts and critiques
+    $node->sticky = 1;
   	// save node
   	node_save($node);
   }
