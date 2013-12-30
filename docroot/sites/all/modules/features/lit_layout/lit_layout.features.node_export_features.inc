@@ -11,7 +11,7 @@ function lit_layout_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
-      \'vid\' => \'23\',
+      \'vid\' => \'21\',
       \'uid\' => \'0\',
       \'title\' => \'Demo\',
       \'log\' => \'\',
@@ -23,13 +23,13 @@ function lit_layout_node_export_features_default() {
       \'nid\' => \'21\',
       \'type\' => \'section\',
       \'language\' => \'und\',
-      \'created\' => \'1388319274\',
-      \'changed\' => \'1388334756\',
+      \'created\' => \'1388363169\',
+      \'changed\' => \'1388363169\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'a91fa798-f2c7-484d-bddd-f001d75c4ac4\',
-      \'revision_timestamp\' => \'1388334756\',
-      \'revision_uid\' => \'1\',
+      \'revision_timestamp\' => \'1388363169\',
+      \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
           array(
@@ -97,7 +97,7 @@ function lit_layout_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1388319274\',
+      \'last_comment_timestamp\' => \'1388363169\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'0\',
       \'comment_count\' => \'0\',
@@ -126,12 +126,12 @@ function lit_layout_node_export_features_default() {
       \'nid\' => \'22\',
       \'type\' => \'section\',
       \'language\' => \'und\',
-      \'created\' => \'1388319274\',
-      \'changed\' => \'1388319274\',
+      \'created\' => \'1388363169\',
+      \'changed\' => \'1388363169\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'bb3731c6-798c-4ab9-a94e-2a37ae722457\',
-      \'revision_timestamp\' => \'1388319274\',
+      \'revision_timestamp\' => \'1388363169\',
       \'revision_uid\' => \'0\',
       \'body\' => array(
         \'und\' => array(
@@ -200,7 +200,7 @@ function lit_layout_node_export_features_default() {
         ),
       ),
       \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1388319274\',
+      \'last_comment_timestamp\' => \'1388363169\',
       \'last_comment_name\' => NULL,
       \'last_comment_uid\' => \'0\',
       \'comment_count\' => \'0\',

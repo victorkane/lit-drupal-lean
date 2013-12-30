@@ -48,32 +48,6 @@ function lit_layout_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'litthemezen' => array(
-        'region' => 'footer',
-        'status' => 1,
-        'theme' => 'litthemezen',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['menu-menu-footer-menu'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'menu-footer-menu',
-    'module' => 'menu',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'litthemezen' => array(
         'region' => 'bottom',
         'status' => 1,
         'theme' => 'litthemezen',
@@ -86,7 +60,7 @@ function lit_layout_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '<none>',
+    'title' => '',
     'visibility' => 0,
   );
 
