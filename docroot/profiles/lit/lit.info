@@ -1,6 +1,6 @@
 ; Packaging information for lit
 name = "lit"
-description = "Literary Workshop built on Drupal Lean Process LTS for the long haul"
+description = "Literary Workshop built on Drupal Lean Process LTS for the long haul; Zen sub-theme; blocks with context management; distinct install profile + base features, then features based development phases."
 exclusive = "1"
 core = "7.x"
 ; ----------
