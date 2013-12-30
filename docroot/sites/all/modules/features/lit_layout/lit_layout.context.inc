@@ -22,6 +22,11 @@ function lit_layout_context_default_contexts() {
         'section/what-is-literary-workshop' => 'section/what-is-literary-workshop',
       ),
     ),
+    'user' => array(
+      'values' => array(
+        'anonymous user' => 'anonymous user',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -72,6 +77,11 @@ function lit_layout_context_default_contexts() {
     'path' => array(
       'values' => array(
         'section/demo' => 'section/demo',
+      ),
+    ),
+    'user' => array(
+      'values' => array(
+        'anonymous user' => 'anonymous user',
       ),
     ),
   );

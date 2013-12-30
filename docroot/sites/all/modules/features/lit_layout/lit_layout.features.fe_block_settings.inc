@@ -19,7 +19,9 @@ function lit_layout_default_fe_block_settings() {
     'module' => 'lit_blocks',
     'node_types' => array(),
     'pages' => '<front>',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 1,
+    ),
     'themes' => array(
       'litthemezen' => array(
         'region' => 'header',
