@@ -1,0 +1,8 @@
+name = Lit Demo
+description = Demo app for Literary Workshop
+core = 7.x
+package = Features
+dependencies[] = lit_layout
+dependencies[] = lit_utils
+features[features_api][] = api:2
+project path = sites/all/modules/features

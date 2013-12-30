@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file lit_utils.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function lit_utils_menu() {
+  $items = array();
+  
+  $items['user/demo'] = array(
+    'title' => 'Demo',
+    'page callback' => 'lit_utils_start_demo',
+  	'access callback' => TRUE,
+  );
+  return $items;
+}
+
+function lit_utils_start_demo ($the_uid = 3) {
+  // For security reasons, let's make sure the requested uid 
+  // is of role demo, otherwise people can login as admin or what have you
+	// get demo users
+	$demo_uids = array();
+	
+	// Use $query for readability
+	$query = 'SELECT DISTINCT(ur.uid)
+  FROM {users_roles} AS ur
+  WHERE ur.rid IN (:rids)';
+	$result = db_query($query, array(':rids' => array(3)));
+	
+	foreach ($result as $row) {
+		$demo_uids[] = $row->uid;
+	}
+  // If $the_uid is one of them, login as such and go to account
+  if (in_array($the_uid, $demo_uids)) {
+	  $form_state['uid'] = $the_uid;
+	  user_login_submit(array(), $form_state);
+    drupal_goto('user/' . $the_uid);
+  }
+  // else go to current account page
+  else {
+    global $user;
+    $the_uid = $user->uid;
+    drupal_goto('user/' . $the_uid);
+  }
+}
