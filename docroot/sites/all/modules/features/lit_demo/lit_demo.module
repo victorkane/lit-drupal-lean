@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Lit Demo feature.
  */
+
+include_once 'lit_demo.features.inc';

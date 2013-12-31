@@ -1,0 +1,5 @@
+name = lit_views_demo export module
+description = Export objects from CTools
+dependencies[] = views
+package = Chaos tool suite
+core = 7.x
