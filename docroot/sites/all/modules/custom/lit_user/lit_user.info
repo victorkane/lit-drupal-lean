@@ -1,0 +1,6 @@
+name = Lit user export module
+description = User account functionality for Literary Workshop - Export objects from CTools
+dependencies[] = context
+dependencies[] = views
+package = Chaos tool suite
+core = 7.x
