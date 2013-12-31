@@ -5,6 +5,7 @@ package = Features
 dependencies[] = auto_nodetitle
 dependencies[] = ctools
 dependencies[] = entityreference
+dependencies[] = entityreference_prepopulate
 dependencies[] = features
 dependencies[] = list
 dependencies[] = node
