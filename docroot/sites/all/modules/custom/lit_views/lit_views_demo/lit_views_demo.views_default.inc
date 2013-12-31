@@ -12,11 +12,11 @@ function lit_views_demo_views_default_views() {
   $views = array();
 
   $view = new view();
-  $view->name = 'frontpage';
+  $view->name = 'home_page';
   $view->description = 'Emulates the default Drupal front page; you may set the default home page path to this view to make it your front page.';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Front page';
+  $view->human_name = 'Home page';
   $view->core = 0;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -76,7 +76,7 @@ function lit_views_demo_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['path'] = 'frontpage';
+  $handler->display->display_options['path'] = 'homepage';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed');
@@ -156,8 +156,8 @@ function lit_views_demo_views_default_views() {
   $handler->display->display_options['filters']['sticky']['table'] = 'node';
   $handler->display->display_options['filters']['sticky']['field'] = 'sticky';
   $handler->display->display_options['filters']['sticky']['value'] = '1';
-  $handler->display->display_options['path'] = 'frontpage';
-  $views['frontpage'] = $view;
+  $handler->display->display_options['path'] = 'homepage';
+  $views['home_page'] = $view;
 
   return $views;
 }
