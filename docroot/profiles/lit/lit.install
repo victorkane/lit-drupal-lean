@@ -198,13 +198,13 @@ function lit_install() {
   user_save('', $new_user);
   // revert features to ensure they are all installed
   $features = array(
-    array('lit_base' => TRUE),
     array('lit_demo_content' => TRUE),
   );
   features_revert($features);
   features_revert(array('lit_layout' => array('fe_block_settings')));
   features_revert(array('lit_layout' => array('node_export_features')));
-  // ignore any rebuild messages
+  features_revert(array('lit_base' => array('field_base')));
+// ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
   drupal_get_messages();
