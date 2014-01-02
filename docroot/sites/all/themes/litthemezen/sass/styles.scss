@@ -17,8 +17,11 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
-// Optionally, add your own components here.
+
+/* Optionally, add your own components here. */
 @import "print";
+/* Custom Literary Workshop layouts */
+@import "layouts/responsiveblocks";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */

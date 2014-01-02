@@ -27,32 +27,33 @@ function lit_blocks_block_view($delta = '') {
 
   switch ($delta) {
     case 'landing_page_options':
+/*        
     	$module_path = drupal_get_path('module', 'lit_blocks');
     	$full_path = $module_path .'/lit_blocks.css';
     	drupal_add_css($full_path);
-      //$block['subject'] = t('Landing Page Options');
+*/        
       $block['subject'] = '';
       $output = array(
       	'blokcito01' => array(
    			  '#type' => 'link',
    			  '#title' => 'About Literary Workshop',
       		'#href' => 'section/what-is-literary-workshop',
-          '#prefix' => '<div class="blokcito"><p>',
+          '#prefix' => '<div class="landing-container"><div class="blokcito01"><p>',
       		'#suffix' => ' Find out about our community!</p></div>',
         ),
       	'blokcito02' => array(
    			  '#type' => 'link',
    			  '#title' => 'Sign up as a Literary Workshop member',
       		'#href' => 'user/register',
-          '#prefix' => '<div class="blokcito"><p>Critique and be critiqued! ',
+          '#prefix' => '<div class="blokcito02"><p>Critique and be critiqued! ',
       		'#suffix' => '</p></div>',
         ),
       	'blokcito03' => array(
           '#type' => 'link',
       		'#title' => 'try out',
       		'#href' => 'section/demo',
-          '#prefix' => '<div class="blokcito"><p>Participate right now! Just ',
-          '#suffix' => ' the demo for yourself!</p></div>',
+          '#prefix' => '<div class="blokcito03"><p>Participate right now! Just ',
+          '#suffix' => ' the demo for yourself!</p></div></div>',
         ),
       );
       $block['content'] = $output;

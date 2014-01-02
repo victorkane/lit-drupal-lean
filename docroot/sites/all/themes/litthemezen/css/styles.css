@@ -1703,6 +1703,7 @@ tr.selected td {
   background-image: url('../images/progress.gif?1376896851');
 }
 
+/* Optionally, add your own components here. */
 /**
  * @file
  * Print styling
@@ -1787,6 +1788,96 @@ tr.selected td {
   .feed-icons {
     visibility: hidden;
     display: none;
+  }
+}
+/* Custom Literary Workshop layouts */
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout for Literary Workshop blocks
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/* landing_page_options block */
+/* line 12, ../sass/layouts/_responsiveblocks.scss */
+.landing-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.landing-container:before, .landing-container:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.landing-container:after {
+  clear: both;
+}
+
+/* line 21, ../sass/layouts/_responsiveblocks.scss */
+.blokcito01, .blokcito02, .blokcito03 {
+  height: 175px;
+  border: 1px silver solid;
+  text-align: center;
+}
+
+/* line 27, ../sass/layouts/_responsiveblocks.scss */
+.blokcito01 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+}
+
+/* line 31, ../sass/layouts/_responsiveblocks.scss */
+.blokcito02 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+}
+
+/* line 35, ../sass/layouts/_responsiveblocks.scss */
+.blokcito03 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 40, ../sass/layouts/_responsiveblocks.scss */
+  .landing-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 46, ../sass/layouts/_responsiveblocks.scss */
+  .blokcito01 {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+  }
+
+  /* line 50, ../sass/layouts/_responsiveblocks.scss */
+  .blokcito02 {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+  }
+
+  /* line 55, ../sass/layouts/_responsiveblocks.scss */
+  .blokcito03 {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
   }
 }
 /* SMACSS theme rules */

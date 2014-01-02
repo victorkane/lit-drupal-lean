@@ -4,4 +4,4 @@ dependencies[] = block
 package = Lit
 core = 7.x
 files[] = tests/lit_blocks.test
-stylesheets[all][] = lit_blocks.css
+;  stylesheets[all][] = lit_blocks.css
