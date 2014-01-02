@@ -44,6 +44,8 @@ Example project for DrupalPicchu2014 workshop.
 * You will see bard or muse's texts appear listed in the corresponding My texts table on the account page.
 * Going back to home, all texts (authored both by bard and muse) are cycled through by the homepage view.
 
+* Whenever viewing the full node display for a Text, if CRIT's exist for that text, a list of those CRITS will be found just below the Text.
+
 ### More resources
 
 More info on why install profile at https://github.com/victorkane/lit-drupal-lean/issues/27
