@@ -1,4 +1,4 @@
-name = lit_views_demo export module
+name = Lit views demo export module
 description = Export objects from CTools
 dependencies[] = views
 package = Chaos tool suite
