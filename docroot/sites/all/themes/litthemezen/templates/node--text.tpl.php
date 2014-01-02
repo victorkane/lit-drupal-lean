@@ -36,6 +36,13 @@
     hide($content['links']);
     print render($content);
   ?>
+  <?php 
+    if ($page): 
+      // Show table of CRITS for this text on full node display
+      // print views_embed_view('VIEWS_MACHINE_NAME', 'DISPLAY_ID', $view_arg);
+      print views_embed_view('list_critiques_by_text', 'block', $node->nid);
+    endif;
+  ?>
   <h4><a href="/node/add/critique?field_text_being_critiqued=<?php print $node->nid; ?>"><?php print t('Click here to add your own critique to this text') ?></a></h4>
 
   <?php print render($content['links']); ?>
