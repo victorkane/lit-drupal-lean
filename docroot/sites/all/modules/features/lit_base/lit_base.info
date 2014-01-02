@@ -8,6 +8,7 @@ dependencies[] = entityreference
 dependencies[] = entityreference_prepopulate
 dependencies[] = features
 dependencies[] = list
+dependencies[] = lit_views_crit_by_text
 dependencies[] = node
 dependencies[] = options
 dependencies[] = pathauto
