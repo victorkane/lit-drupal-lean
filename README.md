@@ -1,11 +1,13 @@
 lit-drupal-lean
 ===============
 
+Proyecto de ejemplo para taller y presentación en DrupalPicchu2014, centrado en un proceso lean y agil pensado para Drupal, y una arquitectura "todo dentro del código" para el fácil despliegue de contenidos y configuraciones entre instancias de una aplicación Drupal (utilizando perfil de instalación, features y CTools Bulk Export a módulo):
+
+"Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
+
 Example project for DrupalPicchu2014 workshop.
 
 "Conquering, for Drupal, an agile process driven by user experience enhancements, with tools".
-
-"Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
 
 ### Instructions
 
