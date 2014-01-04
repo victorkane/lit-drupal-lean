@@ -5,7 +5,7 @@ Proyecto de ejemplo para taller y presentación en DrupalPicchu2014, centrado en
 
 "Conquistando para Drupal un proceso agil, motorizado por incrementos en la usabilidad del usuario, con herramientas".
 
-Example project for DrupalPicchu2014 workshop.
+Example project for DrupalPicchu2014 workshop and presentation, centered upon a lean and agile process tailored to Drupal, and upon an "everything in code" architecture for the purpose of easily deploying content and configuration between instances of a Drupal application (using the installation profile, features and module building via CTools Bulk Export):
 
 "Conquering, for Drupal, an agile process driven by user experience enhancements, with tools".
 
