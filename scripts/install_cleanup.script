@@ -1,0 +1,9 @@
+#!/usr/bin/drush
+
+// check if we can bootstrap
+$self = drush_sitealias_get_record('@self');
+if (empty($self)) {
+  drush_die("I can't bootstrap from the current location.", 0);
+}
+
+drush_print(dt("Hello world!  This site's name is: @name", array("@name" => variable_get('site_name', 'unknown'))));
