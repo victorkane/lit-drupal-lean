@@ -28,4 +28,6 @@ $exists = db_query("SELECT mlid from {menu_links} WHERE link_title=:link_title A
 // Save the record if the data does not exist
 if(!$exists) {
 	menu_link_save($item);
+  menu_rebuild();
 }
+
