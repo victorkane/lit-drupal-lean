@@ -1,9 +1,12 @@
 <?php 
 
+// Just do stuff :)
 //$n = node_load(1);
 //print $n->title . '\n';
 
 // Get difficult login link into user menu
+// Commmented out since without the login user block enabled, the Log in entry appears in the user menu !!!
+/********
 $link = array(
 		'link_title' => 'login',
 		'link_path' => 'user/login',
@@ -25,3 +28,9 @@ $exists = db_query("SELECT mlid from {menu_links} WHERE link_title=:link_title A
 if(!$exists) {
 	menu_link_save($item);
 }
+********/
+
+// Now that we have the login link nicely and economically placed top right corner in user menu,
+// let's get rid of the unsightly user login block
+
+db_delete('block')->condition('module', 'user')->execute();
