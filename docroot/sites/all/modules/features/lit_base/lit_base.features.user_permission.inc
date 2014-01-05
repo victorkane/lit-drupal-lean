@@ -122,5 +122,59 @@ function lit_base_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'show format selection for node'.
+  $permissions['show format selection for node'] = array(
+    'name' => 'show format selection for node',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'demo user' => 'demo user',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format tips'.
+  $permissions['show format tips'] = array(
+    'name' => 'show format tips',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'demo user' => 'demo user',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show more format tips link'.
+  $permissions['show more format tips link'] = array(
+    'name' => 'show more format tips link',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'use text format filtered_html'.
+  $permissions['use text format filtered_html'] = array(
+    'name' => 'use text format filtered_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'demo user' => 'demo user',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format full_html'.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'demo user' => 'demo user',
+      'workshop member' => 'workshop member',
+    ),
+    'module' => 'filter',
+  );
+
   return $permissions;
 }
