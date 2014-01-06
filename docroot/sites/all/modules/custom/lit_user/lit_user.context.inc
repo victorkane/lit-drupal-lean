@@ -36,6 +36,12 @@ function lit_user_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-list_critiques_by_user-block' => array(
+          'module' => 'views',
+          'delta' => 'list_critiques_by_user-block',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
