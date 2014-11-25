@@ -56,6 +56,6 @@ Project docs: [Lit Drupal Lean project wiki](https://github.com/victorkane/lit-d
 
 Project news and history: [Issue page](https://github.com/victorkane/lit-drupal-lean/issues?state=open).
 
-Slides: coming early January
+Slides (Spanish): http://www.slideshare.net/victorkane/taller-drupal-lean-process
 
 Video: coming late January
